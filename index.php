@@ -7,7 +7,6 @@
     <meta name="theme-color" content="#131a43">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -58,8 +57,8 @@
     </footer>
 
     <!-- Vanta.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r95/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta@master/dist/vanta.halo.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
     <script>
         VANTA.HALO({
             el: "body",
