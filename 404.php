@@ -9,7 +9,7 @@
 $page_title = 'Home';
 
 //insert HTML header
-require_once '/html_header.php';
+require_once(dirname(__FILE__).'/includes/html_header.php');
 ?>
 
 <main class="row">
@@ -21,4 +21,4 @@ require_once '/html_header.php';
 
 <?php
 //insert HTML footer
-require_once '/html_footer.php';
+require_once(dirname(__FILE__).'/includes/html_footer.php');

@@ -15,7 +15,7 @@
     <meta name="theme-color" content="#131a43">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <title>Kilian Domaratius<?php echo (($isset($page_title) && $page_title != '') ? " - $page_title" : ''); ?></title>
+    <title>Kilian Domaratius<?php echo ((isset($page_title) && $page_title != '') ? " - $page_title" : ''); ?></title>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
