@@ -41,14 +41,14 @@ require_once(dirname(__FILE__) . '/includes/html_header.php');
             <section class="row contact">
                 <div class="col">
                     <h2>Kontakt</h2>
-                    <form id="contact-form">
+                    <form id="contact-form" action="/includes/mailer.php">
+                        <div class="form-label-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" class="form-control" id="contact-name" placeholder="Max Mustermann" required>
+                        </div>
                         <div class="form-label-group">
                             <label for="contact-email">Email address</label>
                             <input type="email" class="form-control" id="contact-email" placeholder="name@beispiel.de" required>
-                        </div>
-                        <div class="form-label-group">
-                            <label for="contact-subject">Betreff</label>
-                            <input type="text" class="form-control" id="contact-subject">
                         </div>
                         <div class="form-label-group">
                             <label for="contact-message">Example textarea</label>
