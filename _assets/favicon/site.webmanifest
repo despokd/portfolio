@@ -1,6 +1,12 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Kilian Domaratius",
+    "short_name": "KD",
+    "description": "Portfolio of Kilian Domaratius",
+    "start_url": "/",
+    "scope": "/",
+    "theme_color": "#131a43",
+    "background_color": "#ffffff",
+    "display": "standalone",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -12,9 +18,5 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ],
-    "start_url": "/",
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
+    ]
 }
