@@ -43,22 +43,23 @@ require_once(dirname(__FILE__) . '/includes/html_header.php');
                     <h2>Kontakt</h2>
                     <form id="contact-form" action="/includes/mailer.php">
                         <div class="form-label-group">
-                            <label for="contact-name">Name</label>
+                            <label for="contact-name" class="label-required">Name</label>
                             <input type="text" class="form-control" id="contact-name" placeholder="Max Mustermann" required>
                         </div>
                         <div class="form-label-group">
-                            <label for="contact-email">Email address</label>
+                            <label for="contact-email" class="label-required">E-Mail addresse</label>
                             <input type="email" class="form-control" id="contact-email" placeholder="name@beispiel.de" required>
                         </div>
                         <div class="form-label-group">
-                            <label for="contact-message">Example textarea</label>
+                            <label for="contact-message" class="label-required">Ihre Nachricht</label>
                             <textarea class="form-control" id="contact-message" rows="3"></textarea>
                         </div>
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="contact-privacy" required>
-                            <label class="form-check-label" for="contact-privacy">Ich aktzeptiere die <a href="">Datenschutzbestimmungen</a></label>
+                            <label class="form-check-label" for="contact-privacy">Ich aktzeptiere die <a href="/privacy" target="_blank">Datenschutzbestimmungen</a></label>
                         </div>
                         <button type="submit" class="btn btn-primary">Senden</button>
+                        <p>Mit <span class="label-required"></span> markierte Felder sind erforderlich</p>
                         <div id="contact-alerts">
                         </div>
                     </form>
