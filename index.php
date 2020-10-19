@@ -9,7 +9,7 @@
 $page_title = 'Home';
 
 //insert HTML header
-require_once(dirname(__FILE__) . '/includes/html_header.php');
+require_once(dirname(__FILE__) . '/_includes/html_header.php');
 ?>
 
 <div class="container-fluid">
@@ -78,4 +78,4 @@ require_once(dirname(__FILE__) . '/includes/html_header.php');
 
 <?php
 //insert HTML footer
-require_once(dirname(__FILE__) . '/includes/html_footer.php');
+require_once(dirname(__FILE__) . '/_includes/html_footer.php');
