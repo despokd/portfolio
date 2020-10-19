@@ -6,7 +6,7 @@
  * @author Kilian Domaratius <portfolio@kdomaratius.de>
  */
 
-$page_title = 'Datenschutzerklärung';
+$page_title = 'Datenschutz';
 
 //insert HTML header
 require_once '../_includes/html_header.php';
