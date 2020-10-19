@@ -41,7 +41,7 @@ require_once(dirname(__FILE__) . '/_includes/html_header.php');
             <section class="row contact">
                 <div class="col">
                     <h2>Kontakt</h2>
-                    <form id="contact-form" action="/includes/mailer.php">
+                    <form id="contact-form" method="post" action="/_includes/mailer.php">
                         <div class="form-label-group">
                             <label for="contact-name" class="label-required">Name</label>
                             <input type="text" class="form-control" id="contact-name" placeholder="Max Mustermann" required>
