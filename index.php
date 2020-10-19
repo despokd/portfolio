@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Portfolio page
  * 
@@ -8,12 +9,12 @@
 $page_title = 'Home';
 
 //insert HTML header
-require_once(dirname(__FILE__).'/includes/html_header.php');
+require_once(dirname(__FILE__) . '/includes/html_header.php');
 ?>
 
 <div class="container-fluid">
     <div class="row">
-        <aside class="col-lg-4">
+        <aside class="col-lg-2">
             <nav id="navbar" class="navbar navbar-light bg-light">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <nav class="nav nav-pills flex-column">
@@ -40,12 +41,34 @@ require_once(dirname(__FILE__).'/includes/html_header.php');
             <section class="row contact">
                 <div class="col">
                     <h2>Kontakt</h2>
+                    <form id="contact-form">
+                        <div class="form-label-group">
+                            <label for="contact-email">Email address</label>
+                            <input type="email" class="form-control" id="contact-email" placeholder="name@beispiel.de" required>
+                        </div>
+                        <div class="form-label-group">
+                            <label for="contact-subject">Betreff</label>
+                            <input type="text" class="form-control" id="contact-subject">
+                        </div>
+                        <div class="form-label-group">
+                            <label for="contact-message">Example textarea</label>
+                            <textarea class="form-control" id="contact-message" rows="3"></textarea>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="contact-privacy" required>
+                            <label class="form-check-label" for="contact-privacy">Ich aktzeptiere die <a href="">Datenschutzbestimmungen</a></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Senden</button>
+                        <div id="contact-alerts">
+                        </div>
+                    </form>
                 </div>
             </section>
 
             <footer class="row">
                 <div class="col">
                     <h2>Footer</h2>
+                    <p>&copy; 2020 Kilian Domaratius</p>
                 </div>
             </footer>
         </main>
@@ -54,4 +77,4 @@ require_once(dirname(__FILE__).'/includes/html_header.php');
 
 <?php
 //insert HTML footer
-require_once(dirname(__FILE__).'/includes/html_footer.php');
+require_once(dirname(__FILE__) . '/includes/html_footer.php');
