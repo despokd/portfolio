@@ -47,11 +47,11 @@ require_once(dirname(__FILE__) . '/_includes/html_header.php');
                             <input type="text" class="form-control" id="contact-name" placeholder="Max Mustermann" required>
                         </div>
                         <div class="form-label-group">
-                            <label for="contact-email" class="label-required">E-Mail addresse</label>
+                            <label for="contact-email" class="label-required">E-Mail</label>
                             <input type="email" class="form-control" id="contact-email" placeholder="name@beispiel.de" required>
                         </div>
                         <div class="form-label-group">
-                            <label for="contact-message" class="label-required">Ihre Nachricht</label>
+                            <label for="contact-message" class="label-required">Nachricht</label>
                             <textarea class="form-control" id="contact-message" rows="3"></textarea>
                         </div>
                         <div class="form-group form-check">
