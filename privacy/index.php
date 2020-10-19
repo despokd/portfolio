@@ -9,7 +9,7 @@
 $page_title = 'Datenschutzerklärung';
 
 //insert HTML header
-require_once(dirname(__FILE__) . '/_includes/html_header.php');
+require_once '../_includes/html_header.php';
 ?>
 
 <main class="row">
@@ -96,4 +96,4 @@ require_once(dirname(__FILE__) . '/_includes/html_header.php');
 
 <?php
 //insert HTML footer
-require_once(dirname(__FILE__) . '/_includes/html_footer.php');
+require_once '../_includes/html_footer.php';
