@@ -11,10 +11,9 @@ $page_title = 'Datenschutzerklärung';
 //insert HTML header
 require_once '../_includes/html_header.php';
 ?>
-
-<main class="row">
-    <section class="col">
-        <div class="cell">
+<div class="container">
+    <main class="row">
+        <section class="col">
             <h1>Datenschutz</h1>
             <h2>1. Datenschutz auf einen Blick</h2>
             <h3>Allgemeine Hinweise</h3>
@@ -90,9 +89,9 @@ require_once '../_includes/html_header.php';
             <p>Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde.</p>
             <p>Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z.&nbsp;B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.</p>
             <p>Stand: Oktober 2020</p>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
+</div>
 
 <?php
 //insert HTML footer
