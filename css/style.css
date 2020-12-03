@@ -7,6 +7,13 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+/* Typo */
+.logo-text {
+  font-size: xx-large;
+  font-weight: bolder;
+  font-style: italic;
+}
+
 /* Forms */
 .label-required:after {
   content: ' *';
