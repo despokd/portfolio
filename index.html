@@ -1,9 +1,90 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Kilian Domaratius</title>
-    </head>
-    <body>
+<html lang="de">
 
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Kilian Domaratius</title>
+    <meta name="description" content="Portfolio page for Kilian Domaratius">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Kilian Domaratius">
+    <meta property="og:description" content="Portfolio page for Kilian Domaratius">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kdomaratius.de">
+    <meta property="og:image" content=""><!-- @todo -->
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="theme-color" content="">
+
+    <link href="https://unpkg.com/vuesax@4.0.1-alpha.16/dist/vuesax.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <vs-button>Hello World</vs-button>
+    </div>
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuesax@4.0.1-alpha.16/dist/vuesax.min.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                skills: {
+                    wordpress: {
+                        show: true,
+                        hasImage: true,
+                        name: 'WordPress',
+                        level: 2,
+                        link: 'https://wordpress.com',
+                        order: 1,
+                        attachments: [],
+                    },
+                    prestashop: {
+                        show: true,
+                        hasImage: false,
+                        name: 'PrestaShop',
+                        level: 2,
+                        link: 'https://www.prestashop.com/',
+                        order: 10,
+                        attachments: [],
+                    }
+
+                },
+                cv: {
+                    afbb: {
+                        show: true,
+                        name: 'AFBB gGmbH / EventClass GmbH',
+                        job: 'Ausbildung zum Fachinformatiker für Anwendungsentwicklung',
+                        url: 'https://www.afbb.de',
+                        hasImage: false,
+                        isEducation: true,
+                        isCertificate: false,
+                        from: '2018',
+                        to: '2021',
+                        attachments: [],
+                    },
+                    gymEf: {
+                        show: true,
+                        name: 'Johann Gutenberggymnasium Erfurt',
+                        job: 'Abitur',
+                        url: '',
+                        hasImage: true,
+                        isEducation: true,
+                        isCertificate: false,
+                        from: '2010',
+                        to: '2016',
+                        attachments: [],
+                    }
+                }
+            }
+        })
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
 </html>
