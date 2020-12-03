@@ -30,10 +30,10 @@
 <body>
     <div id="app">
         <header>
-            <vs-navbar  padding-scroll center-collapsed v-model="active">
+            <vs-navbar padding-scroll center-collapsed v-model="active">
                 <template #left>
                     <div class="logo-wrapper">
-                        <!-- img src="img/logo/logo.svg" alt="KD"> -->
+                        <!-- <img src="img/logo/logo.svg" alt="KD"> -->
                         <span class="logo-text">KD</span>
                     </div>
                 </template>
@@ -52,7 +52,21 @@
             </vs-navbar>
         </header>
         <main>
-            <vs-button>Hello World</vs-button>
+            <section id="hero">
+                <vs-row>
+                    <vs-col vs-type="flex" w="6">
+                        <h1>Kilian Domaratius</h1>
+                        <p>
+                            Voluptates quos laudantium expedita accusantium ea laboriosam sequi blanditiis. Cumque earum
+                            voluptatem et incidunt quidem. Illum perferendis voluptas rerum voluptatem illo. Quia
+                            voluptatem odit deserunt qui. Consectetur dolores vero ut enim praesentium reprehender…
+                        </p>
+                    </vs-col>
+                    <vs-col vs-type="flex" w="6">
+                        <img src="https://picsum.photos/500/400" alt="Portrait">
+                    </vs-col>
+                </vs-row>
+            </section>
         </main>
         <footer>&copy; {{ new Date().getFullYear() }} Kilian Domaratius</footer>
     </div>
