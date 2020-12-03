@@ -22,7 +22,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link href="https://unpkg.com/vuesax@4.0.1-alpha.16/dist/vuesax.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/vuesax@4.0.1-alpha.25/dist/vuesax.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -30,18 +30,26 @@
 <body>
     <div id="app">
         <header>
-            <div class="logo-wrapper">
-                <!-- img src="img/logo/logo.svg" alt="KD"> -->
-                <span class="logo-text">KD</span>
-            </div>
-            <div class="nav-wrapper">
-                <nav>
-                    <ul>
-                        <li><a href="#skill">Skills & CV</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <vs-navbar  padding-scroll center-collapsed v-model="active">
+                <template #left>
+                    <div class="logo-wrapper">
+                        <!-- img src="img/logo/logo.svg" alt="KD"> -->
+                        <span class="logo-text">KD</span>
+                    </div>
+                </template>
+                <vs-navbar-item :active="active == 'skills'" id="skils">
+                    Skills
+                </vs-navbar-item>
+                <vs-navbar-item :active="active == 'cv'" id="cv">
+                    CV
+                </vs-navbar-item>
+                <vs-navbar-item :active="active == 'blog'" id="blog">
+                    Blog
+                </vs-navbar-item>
+                <template #right>
+                    <vs-button href="mailto:contact@kdomaratius.de?subject=Kontaktaufnahme">Kontakt</vs-button>
+                </template>
+            </vs-navbar>
         </header>
         <main>
             <vs-button>Hello World</vs-button>
@@ -50,11 +58,12 @@
     </div>
 
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/vuesax@4.0.1-alpha.16/dist/vuesax.min.js"></script>
+    <script src="https://unpkg.com/vuesax@4.0.1-alpha.25/dist/vuesax.min.js"></script>
     <script>
         new Vue({
             el: '#app',
             data: {
+                active: 0,
                 skills: {
                     wordpress: {
                         show: true,
@@ -104,7 +113,7 @@
             }
         })
 
-        /* main colors */
+        /* main colors
         Vue.use(Vuesax, {
             colors: {
                 primary: '#5b3cc4',
@@ -114,6 +123,7 @@
                 dark: 'rgb(36, 33, 69)'
             }
         })
+        */
     </script>
     <script src="js/script.js"></script>
 </body>
