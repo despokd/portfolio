@@ -2,4 +2,4 @@
 Portfolio page for Kilian Domaratius
 
 ## Mockups
-![Mockup revision 0](/img/mockup/mockup.png)
+![Mockup revision 0](/img/misc/mockup.png)
