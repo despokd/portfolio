@@ -18,6 +18,10 @@ header, main, footer {
   font-weight: bolder;
   font-style: italic;
 }
+.headline {
+  font-size: larger;
+  font-weight: bolder;
+}
 
 /* Forms */
 .label-required:after {
@@ -33,3 +37,5 @@ header, main, footer {
   display: flex;
   align-items: center;
 }
+
+/* Footer */
