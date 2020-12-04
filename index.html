@@ -22,6 +22,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href="https://unpkg.com/vuesax@4.0.1-alpha.25/dist/vuesax.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
@@ -30,26 +31,28 @@
 <body>
     <div id="app">
         <header>
-            <vs-navbar padding-scroll center-collapsed v-model="active">
-                <template #left>
-                    <div class="logo-wrapper">
-                        <!-- <img src="img/logo/logo.svg" alt="KD"> -->
-                        <span class="logo-text">KD</span>
-                    </div>
-                </template>
-                <vs-navbar-item :active="active == 'skills'" id="skils">
-                    Skills
-                </vs-navbar-item>
-                <vs-navbar-item :active="active == 'cv'" id="cv">
-                    CV
-                </vs-navbar-item>
-                <vs-navbar-item :active="active == 'blog'" id="blog">
-                    Blog
-                </vs-navbar-item>
-                <template #right>
-                    <vs-button href="mailto:contact@kdomaratius.de?subject=Kontaktaufnahme">Kontakt</vs-button>
-                </template>
-            </vs-navbar>
+            <div>
+                <vs-navbar padding-scroll center-collapsed v-model="active">
+                    <template #left>
+                        <div class="logo-wrapper">
+                            <!-- <img src="img/logo/logo.svg" alt="KD"> -->
+                            <span class="logo-text">KD</span>
+                        </div>
+                    </template>
+                    <vs-navbar-item :active="active == 'skills'" id="skils">
+                        Skills
+                    </vs-navbar-item>
+                    <vs-navbar-item :active="active == 'cv'" id="cv">
+                        CV
+                    </vs-navbar-item>
+                    <vs-navbar-item :active="active == 'blog'" id="blog">
+                        Blog
+                    </vs-navbar-item>
+                    <template #right>
+                        <vs-button :href="contact.mailto">Kontakt</vs-button>
+                    </template>
+                </vs-navbar>
+            </div>
         </header>
         <main>
             <section id="hero">
@@ -61,85 +64,95 @@
                             voluptatem et incidunt quidem. Illum perferendis voluptas rerum voluptatem illo. Quia
                             voluptatem odit deserunt qui. Consectetur dolores vero ut enim praesentium reprehender…
                         </p>
+                        <vs-button :href="contact.mailto">Kontakt</vs-button>
                     </vs-col>
-                    <vs-col vs-type="flex" w="6">
-                        <img src="https://picsum.photos/500/400" alt="Portrait">
+                    <vs-col vs-type="flex" justify="center" offset="1" w="4">
+                        <vs-row justify="center">
+                            <vs-col>
+                                <img class="img-responsive" style="max-width: 20rem;"
+                                    src="https://picsum.photos/300/400" alt="Portrait">
+                            </vs-col>
+                        </vs-row>
                     </vs-col>
                 </vs-row>
             </section>
         </main>
-        <footer>&copy; {{ new Date().getFullYear() }} Kilian Domaratius</footer>
-    </div>
+        <footer>&copy; {{ new Date().getFullYear() }} Kilian Domaratius - Made with <a href="" target="_blank">Vuesax
+                4</a></footer>
+        </header>
 
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/vuesax@4.0.1-alpha.25/dist/vuesax.min.js"></script>
-    <script>
-        new Vue({
-            el: '#app',
-            data: {
-                active: 0,
-                skills: {
-                    wordpress: {
-                        show: true,
-                        hasImage: true,
-                        name: 'WordPress',
-                        level: 2,
-                        link: 'https://wordpress.com',
-                        order: 1,
-                        attachments: [],
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/vuesax@4.0.1-alpha.25/dist/vuesax.min.js"></script>
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    active: 0,
+                    contact: {
+                        mailto: "mailto:contact@kdomaratius.de?subject=Kontaktanfrage",
                     },
-                    prestashop: {
-                        show: true,
-                        hasImage: false,
-                        name: 'PrestaShop',
-                        level: 2,
-                        link: 'https://www.prestashop.com/',
-                        order: 10,
-                        attachments: [],
-                    }
-                },
-                cv: {
-                    afbb: {
-                        show: true,
-                        name: 'AFBB gGmbH / EventClass GmbH',
-                        job: 'Ausbildung zum Fachinformatiker für Anwendungsentwicklung',
-                        url: 'https://www.afbb.de',
-                        hasImage: false,
-                        isEducation: true,
-                        isCertificate: false,
-                        from: '2018',
-                        to: '2021',
-                        attachments: [],
+                    skills: {
+                        wordpress: {
+                            show: true,
+                            hasImage: true,
+                            name: 'WordPress',
+                            level: 2,
+                            link: 'https://wordpress.com',
+                            order: 1,
+                            attachments: [],
+                        },
+                        prestashop: {
+                            show: true,
+                            hasImage: false,
+                            name: 'PrestaShop',
+                            level: 2,
+                            link: 'https://www.prestashop.com/',
+                            order: 10,
+                            attachments: [],
+                        }
                     },
-                    gymEf: {
-                        show: true,
-                        name: 'Johann Gutenberggymnasium Erfurt',
-                        job: 'Abitur',
-                        url: '',
-                        hasImage: true,
-                        isEducation: true,
-                        isCertificate: false,
-                        from: '2010',
-                        to: '2016',
-                        attachments: [],
+                    cv: {
+                        afbb: {
+                            show: true,
+                            name: 'AFBB gGmbH / EventClass GmbH',
+                            job: 'Ausbildung zum Fachinformatiker für Anwendungsentwicklung',
+                            url: 'https://www.afbb.de',
+                            hasImage: false,
+                            isEducation: true,
+                            isCertificate: false,
+                            from: '2018',
+                            to: '2021',
+                            attachments: [],
+                        },
+                        gymEf: {
+                            show: true,
+                            name: 'Johann Gutenberggymnasium Erfurt',
+                            job: 'Abitur',
+                            url: '',
+                            hasImage: true,
+                            isEducation: true,
+                            isCertificate: false,
+                            from: '2010',
+                            to: '2016',
+                            attachments: [],
+                        }
                     }
                 }
-            }
-        })
+            })
 
-        /* main colors
-        Vue.use(Vuesax, {
-            colors: {
-                primary: '#5b3cc4',
-                success: 'rgb(23, 201, 100)',
-                danger: 'rgb(242, 19, 93)',
-                warning: 'rgb(255, 130, 0)',
-                dark: 'rgb(36, 33, 69)'
-            }
-        })
-        */
-    </script>
-    <script src="js/script.js"></script>
+            /* main colors
+            Vue.use(Vuesax, {
+                colors: {
+                    primary: '#5b3cc4',
+                    success: 'rgb(23, 201, 100)',
+                    danger: 'rgb(242, 19, 93)',
+                    warning: 'rgb(255, 130, 0)',
+                    dark: 'rgb(36, 33, 69)'
+                }
+            })
+            */
+        </script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>

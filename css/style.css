@@ -7,6 +7,15 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+header, main, footer {
+  margin: 2rem;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
 /* Typo */
 .logo-text {
   font-size: xx-large;
@@ -17,4 +26,9 @@ body {
 /* Forms */
 .label-required:after {
   content: ' *';
+}
+
+/* Hero section */
+#hero {
+  margin: 7rem 0;
 }
