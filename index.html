@@ -22,6 +22,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5c942baa27.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/vuesax@4.0.1-alpha.25/dist/vuesax.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
@@ -63,7 +64,10 @@
                             voluptatem et incidunt quidem. Illum perferendis voluptas rerum voluptatem illo. Quia
                             voluptatem odit deserunt qui. Consectetur dolores vero ut enim praesentium reprehender…
                         </p>
-                        <vs-button :href="contact.mailto">Kontakt</vs-button>
+                        <div class="contac-socials">
+                            <vs-button :href="contact.mailto">Kontakt</vs-button>
+                            <vs-button icon flat></vs-button>
+                        </div>
                     </vs-col>
                     <vs-col vs-type="flex" justify="center" offset="1" w="4">
                         <vs-row justify="center">
@@ -76,13 +80,13 @@
                 </vs-row>
             </section>
         </main>
-        <footer>&copy; {{ new Date().getFullYear() }} Kilian Domaratius - Made with <box-icon name='vuejs' type='logo' ></box-icon> <a href="" target="_blank">Vuesax
+        <footer>&copy; {{ new Date().getFullYear() }} Kilian Domaratius - Made with <i class="fab fa-vuejs"></i> <a href="" target="_blank">Vuesax
                 4</a></footer>
         </header>
 
         <script src="https://unpkg.com/vue/dist/vue.js"></script>
         <script src="https://unpkg.com/vuesax@4.0.1-alpha.25/dist/vuesax.min.js"></script>
-        <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>        <script>
+        <script>
             new Vue({
                 el: '#app',
                 data: {
