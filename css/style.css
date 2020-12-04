@@ -1,4 +1,4 @@
-/* main */
+/* Main */
 body {
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -27,4 +27,9 @@ header, main, footer {
 /* Hero section */
 #hero {
   margin: 7rem 0;
+}
+
+.socials-wrapper {
+  display: flex;
+  align-items: center;
 }

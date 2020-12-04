@@ -64,9 +64,9 @@
                             voluptatem et incidunt quidem. Illum perferendis voluptas rerum voluptatem illo. Quia
                             voluptatem odit deserunt qui. Consectetur dolores vero ut enim praesentium reprehender…
                         </p>
-                        <div class="contac-socials">
+                        <div class="socials-wrapper">
                             <vs-button :href="contact.mailto">Kontakt</vs-button>
-                            <vs-button icon flat></vs-button>
+                            <vs-button v-for="social in contact.socials" icon flat :color="social.color" class="social" :href="social.url" :title="social.title"><i :class="social.iconClass"></i></vs-button>
                         </div>
                     </vs-col>
                     <vs-col vs-type="flex" justify="center" offset="1" w="4">
@@ -92,7 +92,21 @@
                 data: {
                     active: 0,
                     contact: {
-                        mailto: "mailto:contact@kdomaratius.de?subject=Kontaktanfrage",
+                        mailto: 'mailto:contact@kdomaratius.de?subject=Kontaktanfrage',
+                        socials: {
+                            xing: {
+                                iconClass: 'fab fa-xing',
+                                color: '#009090',
+                                url: 'https://www.xing.com/profile/Kilian_Domaratius',
+                                title: 'Xing'
+                            },
+                            github: {
+                                iconClass: 'fab fa-github',
+                                color: '#ae3ec9',
+                                url: 'https://github.com/despokd',
+                                title: 'GitHub'
+                            }
+                        }
                     },
                     skills: {
                         wordpress: {
