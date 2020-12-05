@@ -3,6 +3,11 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+body > div {
+  max-width: 1000px;
+  margin: auto;
+}
+
 body > div > header, 
 body > div > main, 
 body > div > footer {
