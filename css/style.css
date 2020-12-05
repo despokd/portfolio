@@ -3,13 +3,22 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-header, main, footer {
+body > header, 
+body > main, 
+body > footer {
   margin: 2rem;
 }
 
 .img-responsive {
   width: 100%;
   height: auto;
+}
+
+.not-margin,
+.con-content {
+  margin: 0px;
+  padding: 10px;
+  padding-bottom: 0px;
 }
 
 /* Typo */
