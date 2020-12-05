@@ -61,7 +61,7 @@
                 <vs-row>
                     <vs-col vs-type="flex" w="6">
                         <h1>Kilian Domaratius</h1>
-                        <p>Webentwickler. </p>
+                        <p>Webentwickler.</p>
                         <div class="socials-wrapper">
                             <vs-button :href="contact.mailto">Kontakt</vs-button>
                             <vs-button v-for="social in contact.socials" icon flat blank :color="social.color"
@@ -424,6 +424,12 @@
                                 color: '#ae3ec9',
                                 url: 'https://github.com/despokd',
                                 title: 'GitHub'
+                            },
+                            stackO: {
+                                iconClass: 'fab fa-stack-overflow',
+                                color: '#f48024',
+                                url: 'https://stackoverflow.com/users/10036524/despokd',
+                                title: 'Stack Overflow'
                             }
                         }
                     },
