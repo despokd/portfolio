@@ -3,9 +3,9 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-body > header, 
-body > main, 
-body > footer {
+body > div > header, 
+body > div > main, 
+body > div > footer {
   margin: 2rem;
 }
 
