@@ -42,6 +42,12 @@ body > div > footer {
   margin: 7rem 0;
 }
 
+.portrait {
+  max-width: 20rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px 5px #bdbdbd;
+}
+
 .socials-wrapper {
   display: flex;
   align-items: center;
