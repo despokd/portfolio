@@ -45,6 +45,7 @@ body > div > footer {
 .socials-wrapper {
   display: flex;
   align-items: center;
+  margin-left: -5px;
 }
 
 /* Footer */
