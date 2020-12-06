@@ -1,81 +1,111 @@
 /* Main */
 body {
-  font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 body > div {
-  max-width: 1000px;
-  margin: auto;
+    max-width: 1000px;
+    margin: auto;
 }
 
-body > div > header, 
-body > div > main, 
+body > div > header,
+body > div > main,
 body > div > footer {
-  margin: 2rem;
+    margin: 2rem;
 }
 
 .img-responsive {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .not-margin,
 .con-content {
-  margin: 0px;
-  padding: 10px;
-  padding-bottom: 0px;
+    margin: 0;
+    padding: 10px 10px 0;
 }
 
 /* Typo */
 .logo-text {
-  font-size: xx-large;
-  font-weight: bolder;
-  font-style: italic;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: italic;
 }
 .headline {
-  font-size: larger;
-  font-weight: bolder;
+    font-size: larger;
+    font-weight: bolder;
 }
 
 /* Forms */
 .label-required:after {
-  content: ' *';
+    content: ' *';
 }
 
 /* Hero section */
 #hero {
-  margin: 7rem 0;
+    margin: 7rem 0;
 }
 
 .portrait {
-  display: none;
-  max-width: 20rem;
-  border-radius: 5px;
-  box-shadow: 2px 2px 15px 5px #bdbdbd;
+    display: none;
+    max-width: 20rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 5px #bdbdbd;
 }
 
-@media (min-width: 601px) {
-  .portrait {
-    display: block;
-  }
+@media(min-width: 601px) {
+    .portrait {
+        display: block;
+    }
 }
 
 .socials-wrapper {
-  display: flex;
-  align-items: center;
-  margin-left: -5px;
+    display: flex;
+    align-items: center;
+    margin-left: -5px;
 }
 
 /* Skills */
 .skills-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-gap: 1rem;
+    display: grid;
+    grid-gap: .7rem;
+    margin-left: -5px;
+}
+.skills-wrapper.advanced {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    margin-bottom: 1rem;
+}
+.skills-wrapper.medium {
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+}
+
+.skills-wrapper .vs-button__content {
+    justify-content: left;
 }
 
 .skill {
-  display: flex;
-  padding: 20px;
-  border-radius: 15px;
-  background: rgb(125 125 125 / 15%);
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
+
+.skill-icon > * {
+    height: 100%;
+    min-width: 20px;
+    margin-right: 8px;
+    margin-left: 5px;
+}
+
+.skill-content {
+  text-align: left;
+}
+
+.skills-wrapper.advanced .skill-content {
+  min-width: 100px;
+  
+}
+.skills-wrapper.medium .skill-content {
+  min-width: 75px;
+  
+}
+
