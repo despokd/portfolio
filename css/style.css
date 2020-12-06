@@ -48,9 +48,16 @@ body > div > footer {
 }
 
 .portrait {
+  display: none;
   max-width: 20rem;
   border-radius: 5px;
   box-shadow: 2px 2px 15px 5px #bdbdbd;
+}
+
+@media (min-width: 601px) {
+  .portrait {
+    display: block;
+  }
 }
 
 .socials-wrapper {
