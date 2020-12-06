@@ -23,6 +23,10 @@
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/5c942baa27.js" crossorigin="anonymous"></script>
+
+    <!-- old Vuesax 3, TODO delete when Vuesax 4 ready-->
+    <link href="https://cdn.jsdelivr.net/npm/vuesax/dist/vuesax.css" rel="stylesheet">
+    
     <link href="https://unpkg.com/vuesax@4.0.1-alpha.25/dist/vuesax.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
@@ -88,6 +92,7 @@
                                 </div>
                                 <div class="skill-content">
                                     {{ skill.name }}
+                                    <vs-progress :percent="45" color="primary">primary</vs-progress>
                                 </div>
                             </a>
                         </div>
@@ -418,6 +423,10 @@
     </div>
 
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <!-- old Vuesax 3, TODO delete when Vuesax 4 ready-->
+    <script src="https://unpkg.com/vuesax"></script>
+
     <script src="https://unpkg.com/vuesax@4.0.1-alpha.25/dist/vuesax.min.js"></script>
     <script>
         new Vue({
