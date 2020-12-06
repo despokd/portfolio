@@ -85,8 +85,8 @@
             <section id="skills">
                 <div class="skills-wrapper">
                     <template v-for="skill in skills">
-                        <div class="skill">
-                            <a :href="skill.url" target="_blank">
+                        <a :href="skill.url" target="_blank">
+                            <div class="skill">
                                 <div class="skill-icon">
                                     <i :class="skill.iconClass"></i>
                                 </div>
@@ -94,8 +94,8 @@
                                     {{ skill.name }}
                                     <vs-progress :percent="45" color="primary">primary</vs-progress>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </template>
                 </div>
             </section>

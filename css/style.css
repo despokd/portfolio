@@ -74,6 +74,7 @@ body > div > footer {
 }
 
 .skill {
+  display: flex;
   padding: 20px;
   border-radius: 15px;
   background: rgb(125 125 125 / 15%);
