@@ -25,15 +25,37 @@ body > div > footer {
     padding: 10px 10px 0;
 }
 
+section {
+  margin-top: 10px;
+  margin-bottom: 2rem;
+}
+
+.svg-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.svg-wrapper > svg {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 /* Typo */
 .logo-text {
     font-size: xx-large;
     font-weight: bolder;
     font-style: italic;
 }
+
 .headline {
     font-size: larger;
     font-weight: bolder;
+}
+
+section > h2 {
+  margin-bottom: 1rem;
 }
 
 /* Forms */
@@ -68,7 +90,7 @@ body > div > footer {
 /* Skills */
 .skills-wrapper {
     display: grid;
-    grid-gap: .7rem;
+    grid-gap: 0.7rem;
     margin-left: -5px;
 }
 .skills-wrapper.advanced {
@@ -97,15 +119,46 @@ body > div > footer {
 }
 
 .skill-content {
-  text-align: left;
+    text-align: left;
 }
 
 .skills-wrapper.advanced .skill-content {
-  min-width: 100px;
-  
+    min-width: 100px;
+
 }
 .skills-wrapper.medium .skill-content {
-  min-width: 75px;
-  
+    min-width: 75px;
+}
+
+/* CV */
+.job-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 15px 20px;
+  margin: 0 0 20px 0;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
+
+.job-icon {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  color: #195bff;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.job-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-title {
+  font-size: 1.1em;
+  font-weight: 600;
 }
 

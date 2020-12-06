@@ -47,14 +47,14 @@
                     <vs-navbar-item :active="active == 'skills'" id="skills">
                         Skills
                     </vs-navbar-item>
-                    <!--
                     <vs-navbar-item :active="active == 'cv'" id="cv">
                         CV
                     </vs-navbar-item>
+                    <!--
                     <vs-navbar-item :active="active == 'blog'" id="blog">
                         Blog
                     </vs-navbar-item>
-                -->
+                    -->
                     <template #right>
                         <vs-button :href="contact.mailto">Kontakt</vs-button>
                     </template>
@@ -86,7 +86,7 @@
             <section id="skills">
                 <h2>Skills</h2>
                 <div class="skills-wrapper advanced">
-                    <template v-for="skill in skills">
+                    <template v-for="skill in orderedSkills">
                         <!-- Advanced skills (minimum 50% experience) -->
                         <vs-button v-if="skill.show && skill.percent >= 50" flat icon blank size="large"
                             :href="skill.url" :color="skill.color">
@@ -104,7 +104,7 @@
                     </template>
                 </div>
                 <div class="skills-wrapper medium">
-                    <template v-for="skill in skills">
+                    <template v-for="skill in orderedSkills">
                         <!-- Medium skills (max 49% experience) -->
                         <vs-button v-if="skill.show && skill.percent < 50" flat icon blank :href="skill.url"
                             :color="skill.color">
@@ -121,6 +121,36 @@
                         </vs-button>
                     </template>
                 </div>
+            </section>
+            <section id="cv">
+                <h2>CV</h2>
+                <template v-for="job in orderedJobs">
+                    <vs-row v-if="job.show" class="job-wrapper">
+                        <vs-col w="1" class="job-icon">
+                            <template v-if="job.hasImage">
+                                <img :src="'img/job/' + job.key + 'png'" :alt="job.name">
+                            </template>
+                            <template v-if="!job.hasImage">
+                                <div class="svg-wrapper">
+                                    <i v-if="job.isEducation" class="fas fa-graduation-cap"></i>
+                                    <i v-if="job.isCertificate" class="fas fa-certificate"></i>
+                                    <i v-if="!job.isEducation && !job.isCertificate" class="fas fa-briefcase"></i>
+                                </div>
+                            </template>
+                        </vs-col>
+                        <vs-col w="11" class="job-content-wrapper">
+                            <div class="job-content">
+                                <div class="job-title">{{ job.job }}</div>
+                                <div class="job-name"><a v-if="job.url" :href="job.url"
+                                        target="_blank">{{ job.name }}</a><template
+                                        v-if="!job.url">{{ job.name }}</template></div>
+                                <div class="job-time">{{ job.from }} - <template
+                                        v-if="new Date(job.to) >= new Date()">Jetzt</template><template
+                                        v-if="new Date(job.to) < new Date()">{{ job.to }}</template></div>
+                            </div>
+                        </vs-col>
+                    </vs-row>
+                </template>
             </section>
         </main>
         <footer>
@@ -486,6 +516,12 @@
                             color: '#f48024',
                             url: 'https://stackoverflow.com/users/10036524/despokd',
                             title: 'Stack Overflow'
+                        },
+                        reddit: {
+                            iconClass: 'fab fa-reddit',
+                            color: '#ff4500',
+                            url: 'https://www.reddit.com/user/despokd/',
+                            title: 'Reddit'
                         }
                     }
                 },
@@ -550,7 +586,7 @@
                         color: "#0073aa",
                         name: 'WordPress',
                         percent: 66,
-                        url: 'https://wordpress.com',
+                        url: 'https://wordpress.org/',
                         attachments: [],
                     },
                     mysql: {
@@ -630,23 +666,50 @@
                         to: '2021',
                         attachments: [],
                     },
+                    tud: {
+                        show: true,
+                        name: 'TU Dresden',
+                        job: 'Informatik Bachelor (angestrebt)',
+                        url: 'https://tu-dresden.de/',
+                        hasImage: false,
+                        isEducation: true,
+                        isCertificate: false,
+                        from: '2016',
+                        to: '2018',
+                        attachments: [],
+                    },
                     gymEf: {
                         show: true,
                         name: 'Johann Gutenberggymnasium Erfurt',
                         job: 'Abitur',
                         url: '',
-                        hasImage: true,
+                        hasImage: false,
                         isEducation: true,
                         isCertificate: false,
                         from: '2010',
                         to: '2016',
+                        attachments: [],
+                    },
+                    praIbm: {
+                        show: true,
+                        name: 'IBM',
+                        job: 'Schülerpraktikum',
+                        url: 'https://www.ibm.com/',
+                        hasImage: false,
+                        isEducation: true,
+                        isCertificate: false,
+                        from: '2008',
+                        to: '2008',
                         attachments: [],
                     }
                 }
             },
             computed: {
                 orderedSkills: function () {
-                    return _.orderBy(this.skills, 'percent')
+                    return _.orderBy(this.skills, 'percent', 'desc')
+                },
+                orderedJobs: function () {
+                    return _.orderBy(this.cv, 'from', 'desc')
                 }
             }
         })
