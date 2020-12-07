@@ -36,29 +36,28 @@
     <div id="app">
         <header>
             <div>
+                <!--
                 <vs-navbar padding-scroll center-collapsed v-model="active">
                     <template #left>
                         <div class="logo-wrapper">
-                            <!-- <img src="img/logo/logo.svg" alt="KD"> -->
                             <span class="logo-text">KD</span>
                         </div>
                     </template>
 
-                    <vs-navbar-item :active="active == 'skills'" id="skills">
+                    <vs-navbar-item :active="active == 'skills'" href="#skills">
                         Skills
                     </vs-navbar-item>
-                    <vs-navbar-item :active="active == 'cv'" id="cv">
+                    <vs-navbar-item :active="active == 'cv'" href="#cv">
                         CV
                     </vs-navbar-item>
-                    <!--
-                    <vs-navbar-item :active="active == 'blog'" id="blog">
+                    <vs-navbar-item :active="active == 'blog'" href="#blog">
                         Blog
                     </vs-navbar-item>
-                    -->
                     <template #right>
                         <vs-button :href="contact.mailto">Kontakt</vs-button>
                     </template>
                 </vs-navbar>
+            -->
             </div>
         </header>
         <main>
@@ -150,6 +149,12 @@
                             </div>
                         </vs-col>
                     </vs-row>
+                </template>
+            </section>
+            <section id="blog">
+                <h2>Blog</h2>
+                <template v-for="post in blog.posts">
+                    {{ post }}test
                 </template>
             </section>
         </main>
@@ -481,11 +486,15 @@
     <script src="https://unpkg.com/vuesax"></script>
 
     <script src="https://unpkg.com/vuesax@4.0.1-alpha.25/dist/vuesax.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.16.0/parser.min.js'></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
         const app = new Vue({
             el: '#app',
             data: {
                 active: 0,
+                feed: 'https://tequilian.de/feed/rss',
+                feedItems: [],
                 dialog: {
                     privacy: false,
                     imprint: false
@@ -702,7 +711,19 @@
                         to: '2008',
                         attachments: [],
                     }
+                },
+                blog: {
+                    postsUrl: "https:/tequilian.de/wp-json/wp/v2/posts",
+                    queryOptions: {
+                        per_page: 6,    // Only retrieve the 10 most recent blog posts.
+                        page: 1,        // Current page of the collection.
+                        _embed: true    //Response should include embedded resources.
+                    },
+                    posts: []
                 }
+            },
+            created: function () {
+                this.getRecentBlogPosts();
             },
             computed: {
                 orderedSkills: function () {
@@ -711,6 +732,20 @@
                 orderedJobs: function () {
                     return _.orderBy(this.cv, 'from', 'desc')
                 }
+            },
+            methods: {
+                getRecentBlogPosts() {
+                    axios
+                        .get(this.postsUrl, { params: this.queryOptions })
+                        .then(response => {
+                            this.posts = response.data;
+                            console.log("Posts retrieved!");
+                            console.log(this.posts);
+                        })
+                        .catch(error => {
+                            console.log(error);
+                        });
+                },
             }
         })
 
