@@ -60,7 +60,11 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0.7em;
+    margin-top: .7em;
+}
+
+p {
+    margin-bottom: .5em;
 }
 
 .logo-text {
@@ -86,6 +90,7 @@ section > h2 {
 /* Hero section */
 #hero {
     margin: 7rem 0;
+    font-size: 1.4em;
 }
 
 .portrait {
