@@ -2,6 +2,12 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
 }
+@media(prefers-color-scheme: dark) {
+    body {
+        background-color: #0b0b0b;
+        color: #fafafa;
+    }
+}
 
 body > div {
     max-width: 1000px;
@@ -26,20 +32,20 @@ body > div > footer {
 }
 
 section {
-  margin-top: 10px;
-  margin-bottom: 2rem;
+    margin-top: 10px;
+    margin-bottom: 2rem;
 }
 
 .svg-wrapper {
-  display: flex;
-  align-items: center;
-  height: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .svg-wrapper > svg {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* Typo */
@@ -55,7 +61,7 @@ section {
 }
 
 section > h2 {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Forms */
@@ -71,8 +77,8 @@ section > h2 {
 .portrait {
     display: none;
     max-width: 20rem;
-    border-radius: 5px;
-    box-shadow: 2px 2px 15px 5px #bdbdbd;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .05);
 }
 
 @media(min-width: 601px) {
@@ -132,33 +138,46 @@ section > h2 {
 
 /* CV */
 .job-wrapper {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 15px 20px;
-  margin: 0 0 20px 0;
-  border-radius: 15px;
-  background-color: rgba(0,0,0,.03);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    margin: 0 0 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .05);
 }
 
 .job-icon {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  width: 50px;
-  margin-right: 1rem;
-  font-size: 1.2rem;
-  color: #195bff;
-  background-color: #fff;
-  border-radius: 50%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    color: #195bff;
+    background-color: #fff;
+    border-radius: 50%;
 }
 .job-content {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .job-title {
-  font-size: 1.1em;
-  font-weight: 600;
+    font-size: 1.1em;
+    font-weight: 600;
 }
 
+/* Blog */
+.vs-card__text p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.vs-card__text button {
+    margin-left: 0;
+}
+.vs-card__group .vs-card__group-cards {
+    overflow-x: hidden;
+}

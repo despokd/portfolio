@@ -150,12 +150,20 @@
                     </vs-row>
                 </template>
             </section>
-            {{ blog }}
             <section id="blog" v-if="blog.posts.length">
                 <h2>Blog</h2>
-                <template v-for="post in blog.posts">
-                    {{ post }}test
-                </template>
+                <vs-card-group>
+                    <vs-card v-for="post in blog.posts" :href="post.link">
+                        <pre>{{ post }}</pre>
+                        <template #title>
+                            <h3>{{ post.title }}</h3>
+                        </template>
+                        <template #text>
+                            <p>{{ post.contentSnippet }}</p>
+                            <vs-button transparent :href="post.link" blank>Weiterlesen</vs-button>
+                        </template>
+                    </vs-card>
+                </vs-card-group>
             </section>
         </main>
         <footer>
@@ -716,7 +724,7 @@
                     }
                 },
                 blog: {
-                    title: '',
+                    feedData: {},
                     postsUrl: 'https://tequilian.de/feed',
                     posts: []
                 }
@@ -738,9 +746,13 @@
                     let parser = new RSSParser();
                     parser.parseURL(this.blog.postsUrl, function (err, feed) {
                         if (err) throw err;
+                        //add posts
                         feed.items.forEach(element => {
                             app.blog.posts.push(element);
                         });
+                        //add feedData
+                        app.blog.feedData = feed;
+                        console.log(feed);
                     })
                 },
             }
