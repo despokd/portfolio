@@ -150,9 +150,9 @@
                     </vs-row>
                 </template>
             </section>
+            {{ blog }}
             <section id="blog" v-if="blog.posts.length">
                 <h2>Blog</h2>
-                {{ blog }}
                 <template v-for="post in blog.posts">
                     {{ post }}test
                 </template>
@@ -722,7 +722,7 @@
                 }
             },
             created: function () {
-                this.getRecentBlogPosts();
+                this.getBlogPosts();
             },
             computed: {
                 orderedSkills: function () {
@@ -733,17 +733,14 @@
                 }
             },
             methods: {
-                getRecentBlogPosts() {
+                getBlogPosts() {
                     /* @link https://core.trac.wordpress.org/ticket/50441 */
                     let parser = new RSSParser();
                     parser.parseURL(this.blog.postsUrl, function (err, feed) {
                         if (err) throw err;
-                        if (feed !== undefined) {
-                            console.log(feed);
-                            // save feed
-                            this.blog.title = feed.title;
-                            this.blog.posts = feed.items;
-                        }
+                        feed.items.forEach(element => {
+                            app.blog.posts.push(element);
+                        });
                     })
                 },
             }
