@@ -5,7 +5,7 @@ Portfolio page for Kilian Domaratius
 ## Used libraries
 - [Vuesax](https://vuesax.com/)
 - [Font Awesome](https://fontawesome.com)
-- [rss-parser]](https://github.com/rbren/rss-parser)
+- [rss-parser](https://github.com/rbren/rss-parser)
 
 ## Mockup
 ![Mockup revision 0](/img/misc/mockup.png)
