@@ -154,7 +154,8 @@
                 </template>
             </section>
             <section id="blog" v-if="blog.posts.length">
-                <h2>Blog</h2>
+                <h2>Blog & projects</h2>
+                <vs-button style="margin-top: -1rem; margin-left: -10px;" href="//tequilian.de" target="_blank" transparent style="display: inline;">By tequilian.de</vs-button>
                 <vs-card-group>
                     <vs-card v-for="post in blog.posts" :href="post.link">
                         <pre>{{ post }}</pre>
@@ -744,7 +745,7 @@
                     posts: []
                 }
             },
-            created: function () {
+            mounted: function () {
                 this.getBlogPosts();
             },
             computed: {
@@ -771,18 +772,6 @@
                 },
             }
         })
-
-        /* main colors
-        Vue.use(Vuesax, {
-            colors: {
-                primary: '#5b3cc4',
-                success: 'rgb(23, 201, 100)',
-                danger: 'rgb(242, 19, 93)',
-                warning: 'rgb(255, 130, 0)',
-                dark: 'rgb(36, 33, 69)'
-            }
-        })
-        */
     </script>
     <script src="js/script.js"></script>
 </body>
