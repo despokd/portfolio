@@ -15,7 +15,7 @@
 
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    
+
     <meta name="google-site-verification" content="jQlsJRuqewlT2vMpQgg-PphQF8ElihdILgnE_fNY1Ks">
 
     <meta name="theme-color" content="#195bff">
@@ -68,7 +68,10 @@
                     <vs-col vs-type="flex" w="8" xs="12">
                         <h1>Kilian Domaratius</h1>
                         <p>Web Developer.</p>
-                        <p><small style="font-size: 1rem; line-height: .5rem;">Ich habe vor kurzem meine Ausbildung zum Fachinformatiker abgeschlossen und erstellte Webseiten und Webmodule in einer kleinen Firma in Dresden. In meiner Freizeit erstelle ich gerne kleine Webanwendungen und Webseiten für den privaten Gebrauch.</small></p>
+                        <p><small style="font-size: 1rem; line-height: .5rem;">Ich habe vor kurzem meine Ausbildung zum
+                                Fachinformatiker abgeschlossen und erstellte Webseiten und Webmodule in einer kleinen
+                                Firma in Dresden. In meiner Freizeit erstelle ich gerne kleine Webanwendungen und
+                                Webseiten für den privaten Gebrauch.</small></p>
                         <div class="socials-wrapper">
                             <vs-button :href="contact.mailto">Kontakt</vs-button>
                             <vs-button v-for="social in contact.socials" icon flat blank :color="social.color"
@@ -155,7 +158,8 @@
             </section>
             <section id="blog" v-if="blog.posts.length">
                 <h2>Blog & projects</h2>
-                <vs-button style="margin-top: -1rem; margin-left: -10px;" href="//tequilian.de" target="_blank" transparent style="display: inline;">By tequilian.de</vs-button>
+                <vs-button style="margin-top: -1rem; margin-left: -10px;" href="//tequilian.de" target="_blank"
+                    transparent style="display: inline;">By tequilian.de</vs-button>
                 <vs-card-group>
                     <vs-card v-for="post in blog.posts" :href="post.link">
                         <pre>{{ post }}</pre>
@@ -242,7 +246,8 @@
                 <p>(Kontaktdaten siehe <vs-button transparent style="display: inline"
                         @click="dialog.imprint=!dialog.imprint">Impressum
                     </vs-button>)</p>
-                <p>E-Mail: <a href="mailto:contact@kdomaratius.de?subject=kdomaratius.de | Datenschutz">contact@kdomaratius.de</a>
+                <p>E-Mail: <a
+                        href="mailto:contact@kdomaratius.de?subject=kdomaratius.de | Datenschutz">contact@kdomaratius.de</a>
                 </p>
                 <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit
                     anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen,
@@ -683,6 +688,15 @@
                         name: 'Svelte.js',
                         percent: 5,
                         url: 'https://svelte.dev/',
+                        attachments: [],
+                    },
+                    docker: {
+                        show: true,
+                        iconClass: "fab fa-docker",
+                        color: " #0073ec",
+                        name: 'Docker',
+                        percent: 5,
+                        url: 'https://www.docker.com/',
                         attachments: [],
                     },
                 },
