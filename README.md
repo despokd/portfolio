@@ -1,11 +1,17 @@
 # kdomaratius.de
+
 Portfolio page for Kilian Domaratius
 [Link to kdomaratius.de](https://kdomaratius.de)
 
-## Used libraries
-- [Vuesax](https://vuesax.com/)
-- [Font Awesome](https://fontawesome.com)
-- [rss-parser](https://github.com/rbren/rss-parser)
+## todo rebuilt
 
-## Mockup
-![Mockup revision 0](/img/misc/mockup.png)
+- Setup svelte app
+- Setup meta
+- Rebuild website content
+- Make rss request async to tequilian.de
+
+## Used libraries
+
+- [Svelte.js](https://svelte.dev/)
+- [IBM Carbon DS](https://www.carbondesignsystem.com/)
+- [rss-parser](https://github.com/rbren/rss-parser)
