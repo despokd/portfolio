@@ -7,7 +7,7 @@ Portfolio page for Kilian Domaratius
 - [x] Setup svelte app
 - [x] Setup IBM Carbon Design System
 - [x] Setup meta
-- [ ] Setup twitter card
+- [x] Setup twitter card
 - [ ] Rebuild website content
 - [ ] Make rss request async to tequilian.de
 
