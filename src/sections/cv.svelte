@@ -22,7 +22,9 @@
         <Column sm={4} class="employment">
           <a href={employment.url} target="_blank">
             <Tile>
-              {employment.institution}
+              <p class="institution">{employment.institution}</p>
+              <p class="title">{employment.title}</p>
+              <p class="employed">{employment.from} - {employment.to}</p>
             </Tile>
           </a>
         </Column>
@@ -30,3 +32,21 @@
     </Row>
   </Grid>
 </Section>
+
+<style>
+  p {
+    padding: 0;
+  }
+  .institution,
+  .title {
+    margin-bottom: var(--cds-spacing-01);
+  }
+  .institution,
+  .employed {
+    color: var(--cds-text-02);
+    font-size: var(--cds-body-short-01-font-size);
+  }
+  .title {
+    font-size: var(--cds-body-short-02-font-size);
+  }
+</style>

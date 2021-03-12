@@ -112,35 +112,35 @@
     "cv": [
         {
             "institution": "AFBB gGmbH / EventClass GmbH",
-            "employment": "Ausbildung zum Fachinformatiker für Anwendungsentwicklung",
+            "title": "Ausbildung zum Fachinformatiker für Anwendungsentwicklung",
             "url": "https://www.afbb.de",
             "from": "2018",
             "to": "2021"
         },
         {
             "institution": "TU Dresden",
-            "employment": "Informatik Bachelor (angestrebt)",
+            "title": "Informatik Bachelor (angestrebt)",
             "url": "https://tu-dresden.de/",
             "from": "2016",
             "to": "2018"
         },
         {
             "institution": "Johann Gutenberggymnasium Erfurt",
-            "employment": "Abitur",
+            "title": "Abitur",
             "url": "https://gutenberggymnasium.de/",
             "from": "2009",
             "to": "2016"
         },
         {
             "institution": "Lessinggymnasium Mannheim",
-            "employment": "Abitur",
+            "title": "Gymnasium",
             "url": "https://www.lessing-gymnasium.com/",
             "from": "2008",
             "to": "2009"
         },
         {
             "institution": "IBM",
-            "employment": "Schülerpraktikum",
+            "title": "Schülerpraktikum",
             "url": "https://www.ibm.com/",
             "from": "2013",
             "to": "2013"

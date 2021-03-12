@@ -49,7 +49,9 @@ export default {
       },
       preprocess: require("svelte-preprocess")(),
     }),
-    css("bundle.css"),
+    // we'll extract any component CSS out into
+    // a separate file - better for performance
+    css({ output: "bundle.css" }),
     json({
       // ignores indent and generates the smallest code
       compact: false,

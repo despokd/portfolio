@@ -25,32 +25,6 @@ dl {
   transform: rotateY(180deg);
 }
 
-/** progresses */
-progress,
-progress::-moz-progress-bar,
-progress::-webkit-progress-bar,
-progress::-webkit-progress-value {
-  border: 0;
-  border-radius: 0;
-  margin-bottom: 1px;
-}
-progress {
-  background-color: white;
-  width: 100%;
-}
-progress::-moz-progress-bar {
-  background-color: var(--cds-interactive-01);
-}
-progress::-webkit-progress-bar {
-  background-color: white;
-}
-progress::-webkit-progress-value {
-  background-color: var(--cds-interactive-01);
-}
-label progress {
-  margin-top: var(--cds-spacing-03);
-}
-
 /** texts */
 .slogan {
   margin-bottom: var(--cds-spacing-04);
@@ -71,7 +45,7 @@ label progress {
 /** sections */
 .skill a,
 .employment a {
-  color: white;
+  color: var(---cds-text-01);
   text-decoration: none;
 }
 .skill a .bx--tile,
