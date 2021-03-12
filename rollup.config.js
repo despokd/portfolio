@@ -4,7 +4,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
 import css from "rollup-plugin-css-only";
-import sveltePreprocess from "svelte-preprocess";
+import json from "rollup-plugin-json";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -50,6 +50,13 @@ export default {
       preprocess: require("svelte-preprocess")(),
     }),
     css("bundle.css"),
+    json({
+      // ignores indent and generates the smallest code
+      compact: false,
+
+      // generate a named export for every property of the JSON object
+      namedExports: true,
+    }),
 
     // If you have external dependencies installed from
     // npm, you'll most likely need these plugins. In

@@ -9,6 +9,7 @@ Portfolio page for Kilian Domaratius
 - [x] Setup meta
 - [x] Setup twitter card
 - [ ] Rebuild website content
+- [ ] Fix missing LinkedIn icon
 - [ ] Make rss request async to tequilian.de
 
 ## Used libraries
