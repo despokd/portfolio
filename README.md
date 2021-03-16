@@ -1,4 +1,5 @@
 # [Portfolio site](https://kdomaratius.de)
+![Preview portfolio](./.github/preview.jpg)
 [My personal example](https://kdomaratius.de)
 
 ## Features
