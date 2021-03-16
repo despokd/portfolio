@@ -1,0 +1,170 @@
+{
+    "defaultLanguage": "de",
+    "name": "Kilian Domaratius",
+    "slogan": "Web Developer.",
+    "about": {
+        "en": "I recently finished my education as an IT specialist and created websites and web modules in a small company in Dresden. In my spare time I like to create small web applications and websites for private use.",
+        "de": "Ich habe vor kurzem meine Ausbildung zum Fachinformatiker abgeschlossen und erstellte Webseiten und Webmodule in einer kleinen Firma in Dresden. In meiner Freizeit erstelle ich gerne kleine Webanwendungen und Webseiten für den privaten Gebrauch."
+    },
+    "projectsFeed": "https://tequilian.de/category/projekte/feed/",
+    "contact": {
+        "email": "contact@kdomaratius.de",
+        "socials": [
+            {
+                "type": "xing",
+                "url": "https://www.xing.com/profile/Kilian_Domaratius"
+            },
+            {
+                "type": "linkedIn",
+                "url": "https://www.linkedin.com/in/kilian-domaratius/"
+            },
+            {
+                "type": "github",
+                "url": "https://github.com/despokd"
+            },
+            {
+                "type": "stackOverflow",
+                "url": "https://stackoverflow.com/users/story/10036524"
+            },
+            {
+                "type": "reddit",
+                "url": "https://www.reddit.com/user/despokd/comments/"
+            }
+        ]
+    },
+    "skills": [
+        {
+            "name": "HTML",
+            "percent": 90,
+            "url": "https://developer.mozilla.org/docs/Web/HTML/HTML5"
+        },
+        {
+            "name": "CSS",
+            "percent": 70,
+            "url": "https://developer.mozilla.org/docs/Web/CSS"
+        },
+        {
+            "name": "JavaScript",
+            "percent": 50,
+            "url": "https://developer.mozilla.org/docs/Web/JavaScript"
+        },
+        {
+            "name": "PHP",
+            "percent": 50,
+            "url": "https://www.php.net/"
+        },
+        {
+            "name": "Illustrator",
+            "percent": 40,
+            "url": "https://www.adobe.com/products/illustrator.html"
+        },
+        {
+            "name": "Photoshop",
+            "percent": 30,
+            "url": "https://www.adobe.com/products/photoshop.html"
+        },
+        {
+            "name": "WordPress",
+            "percent": 66,
+            "url": "https://wordpress.org/"
+        },
+        {
+            "name": "MySQL",
+            "percent": 40,
+            "url": "https://www.mysql.com/"
+        },
+        {
+            "name": "Classic ASP",
+            "percent": 30,
+            "url": "https://classicasp.site/classic-asp-support/a-brief-history-of-classic-asp/"
+        },
+        {
+            "name": "Smarty (PHP)",
+            "percent": 40,
+            "url": "https://www.smarty.net/"
+        },
+        {
+            "name": "Vue.js",
+            "percent": 70,
+            "url": "https://vuejs.org/"
+        },
+        {
+            "name": "Bootstrap",
+            "percent": 75,
+            "url": "https://getbootstrap.com/"
+        },
+        {
+            "name": "jQuery",
+            "percent": 40,
+            "url": "https://jquery.com/"
+        },
+        {
+            "name": "PrestaShop",
+            "percent": 66,
+            "url": "https://www.prestashop.com/"
+        },
+        {
+            "name": "Svelte.js",
+            "percent": 25,
+            "url": "https://svelte.dev/"
+        },
+        {
+            "name": "Docker",
+            "percent": 5,
+            "url": "https://www.docker.com/"
+        }
+    ],
+    "cv": [
+        {
+            "institution": "AFBB gGmbH / EventClass GmbH",
+            "title": {
+                "en": "Training as an IT specialist for application development",
+                "de": "Ausbildung zum Fachinformatiker für Anwendungsentwicklung"
+            },
+            "url": "https://www.afbb.de",
+            "from": "2018-09-15",
+            "to": "2021-02-03",
+            "isHighlight": true
+        },
+        {
+            "institution": "TU Dresden",
+            "title": {
+                "en": "Bachelor of Computer Science (aspired to)",
+                "de": "Informatik Bachelor (angestrebt)"
+            },
+            "url": "https://tu-dresden.de/",
+            "from": "2016",
+            "to": "2018"
+        },
+        {
+            "institution": "Johann Gutenberggymnasium Erfurt",
+            "title": {
+                "en": "High school graduation",
+                "de": "Abitur"
+            },
+            "url": "https://gutenberggymnasium.de/",
+            "from": "2009",
+            "to": "2016"
+        },
+        {
+            "institution": "Lessinggymnasium Mannheim",
+            "title": {
+                "en": "High school",
+                "de": "Gymnasium"
+            },
+            "url": "https://www.lessing-gymnasium.com/",
+            "from": "2008",
+            "to": "2009"
+        },
+        {
+            "institution": "IBM",
+            "title": {
+                "en": "Pupil internship",
+                "de": "Schülerpraktikum"
+            },
+            "url": "https://www.ibm.com/",
+            "from": "2013",
+            "to": "2013"
+        }
+    ]
+}
