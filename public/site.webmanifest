@@ -4,9 +4,6 @@
     "description": "Portfolio of Kilian Domaratius",
     "start_url": "/",
     "scope": "/",
-    "theme_color": "#131a43",
-    "background_color": "#ffffff",
-    "display": "standalone",
     "icons": [
         {
             "src": "icon/android-chrome-192x192.png",

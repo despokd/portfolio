@@ -1,24 +1,14 @@
-# [kdomaratius.de](https://kdomaratius.de)
+# [Portfolio site](https://kdomaratius.de)
 
-Portfolio page for Kilian Domaratius
+## Personalization
+1. Edit `data.json` in `/src` to your needs.
+2. Edit `meta` tags in `/public/index.html`
+3. Edit app data in `/site.webmanifest`
+4. Update `portrait.jpg` to your picture in `/public/img/`
+5. Update icon files in `/public/icon/`
 
-## todo rebuilt
 
-- [x] Setup svelte app
-- [x] Setup IBM Carbon Design System
-- [x] Setup meta
-- [x] Setup twitter card
-- [ ] Rebuild website content
-- [ ] Fix missing LinkedIn icon
-- [ ] Make rss request async to tequilian.de
-
-## Used libraries
-
-- [Svelte.js](https://svelte.dev/)
-- [IBM Carbon DS](https://www.carbondesignsystem.com/)
-- [rss-parser](https://github.com/rbren/rss-parser)
-
-## Svelte instructions
+## Setup app
 
 ### Get started
 
@@ -51,30 +41,6 @@ npm run build
 
 You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
 
-### Single-page app mode
-
-By default, sirv will only respond to requests that match files in `public`. This is to maximize compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for _any_ path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
-```
-
-### Using TypeScript
-
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
-
-```bash
-node scripts/setupTypeScript.js
-```
-
-Or remove the script via:
-
-```bash
-rm scripts/setupTypeScript.js
-```
-
 ### Deploying to the web
 
 #### With [Vercel](https://vercel.com)
@@ -106,3 +72,20 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
+
+## Used main libraries
+
+- [Svelte.js](https://svelte.dev/)
+- [IBM Carbon DS](https://www.carbondesignsystem.com/)
+- [rss-parser](https://github.com/rbren/rss-parser)
+
+## ToDo
+
+- [x] Setup svelte app
+- [x] Setup IBM Carbon Design System
+- [x] Setup meta
+- [x] Setup twitter card
+- [x] Rebuild website content
+- [x] Multi language feature
+- [x] Make rss request async to projects source
+- [ ] Section about 'personality traits' + interests (maybe more photos)

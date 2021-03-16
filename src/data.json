@@ -1,7 +1,12 @@
 {
+    "defaultLanguage": "de",
     "name": "Kilian Domaratius",
     "slogan": "Web Developer.",
-    "about": "Ich habe vor kurzem meine Ausbildung zum Fachinformatiker abgeschlossen und erstellte Webseiten und Webmodule in einer kleinen Firma in Dresden. In meiner Freizeit erstelle ich gerne kleine Webanwendungen und Webseiten für den privaten Gebrauch.",
+    "about": {
+        "en": "I recently finished my education as an IT specialist and created websites and web modules in a small company in Dresden. In my spare time I like to create small web applications and websites for private use.",
+        "de": "Ich habe vor kurzem meine Ausbildung zum Fachinformatiker abgeschlossen und erstellte Webseiten und Webmodule in einer kleinen Firma in Dresden. In meiner Freizeit erstelle ich gerne kleine Webanwendungen und Webseiten für den privaten Gebrauch."
+    },
+    "projectsFeed": "https://tequilian.de/category/projekte/feed/",
     "contact": {
         "email": "contact@kdomaratius.de",
         "socials": [
@@ -30,18 +35,18 @@
     "skills": [
         {
             "name": "HTML",
-            "percent": 80,
-            "url": "https://developer.mozilla.org/de/docs/Web/HTML/HTML5"
+            "percent": 90,
+            "url": "https://developer.mozilla.org/docs/Web/HTML/HTML5"
         },
         {
             "name": "CSS",
-            "percent": 80,
-            "url": "https://developer.mozilla.org/de/docs/Web/CSS"
+            "percent": 70,
+            "url": "https://developer.mozilla.org/docs/Web/CSS"
         },
         {
             "name": "JavaScript",
             "percent": 50,
-            "url": "https://developer.mozilla.org/de/docs/Web/JavaScript"
+            "url": "https://developer.mozilla.org/docs/Web/JavaScript"
         },
         {
             "name": "PHP",
@@ -51,12 +56,12 @@
         {
             "name": "Illustrator",
             "percent": 40,
-            "url": "https://www.adobe.com/de/products/illustrator.html"
+            "url": "https://www.adobe.com/products/illustrator.html"
         },
         {
             "name": "Photoshop",
             "percent": 30,
-            "url": "https://www.adobe.com/de/products/photoshop.html"
+            "url": "https://www.adobe.com/products/photoshop.html"
         },
         {
             "name": "WordPress",
@@ -71,7 +76,7 @@
         {
             "name": "Classic ASP",
             "percent": 30,
-            "url": "https://www.mysql.com/"
+            "url": "https://classicasp.site/classic-asp-support/a-brief-history-of-classic-asp/"
         },
         {
             "name": "Smarty (PHP)",
@@ -85,7 +90,7 @@
         },
         {
             "name": "Bootstrap",
-            "percent": 80,
+            "percent": 75,
             "url": "https://getbootstrap.com/"
         },
         {
@@ -112,35 +117,51 @@
     "cv": [
         {
             "institution": "AFBB gGmbH / EventClass GmbH",
-            "title": "Ausbildung zum Fachinformatiker für Anwendungsentwicklung",
+            "title": {
+                "en": "Training as an IT specialist for application development",
+                "de": "Ausbildung zum Fachinformatiker für Anwendungsentwicklung"
+            },
             "url": "https://www.afbb.de",
-            "from": "2018",
-            "to": "2021"
+            "from": "2018-09-15",
+            "to": "2021-02-03",
+            "isHighlight": true
         },
         {
             "institution": "TU Dresden",
-            "title": "Informatik Bachelor (angestrebt)",
+            "title": {
+                "en": "Bachelor of Computer Science (aspired to)",
+                "de": "Informatik Bachelor (angestrebt)"
+            },
             "url": "https://tu-dresden.de/",
             "from": "2016",
             "to": "2018"
         },
         {
             "institution": "Johann Gutenberggymnasium Erfurt",
-            "title": "Abitur",
+            "title": {
+                "en": "High school graduation",
+                "de": "Abitur"
+            },
             "url": "https://gutenberggymnasium.de/",
             "from": "2009",
             "to": "2016"
         },
         {
             "institution": "Lessinggymnasium Mannheim",
-            "title": "Gymnasium",
+            "title": {
+                "en": "High school",
+                "de": "Gymnasium"
+            },
             "url": "https://www.lessing-gymnasium.com/",
             "from": "2008",
             "to": "2009"
         },
         {
             "institution": "IBM",
-            "title": "Schülerpraktikum",
+            "title": {
+                "en": "Pupil internship",
+                "de": "Schülerpraktikum"
+            },
             "url": "https://www.ibm.com/",
             "from": "2013",
             "to": "2013"

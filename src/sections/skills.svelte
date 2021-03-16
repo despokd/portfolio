@@ -1,5 +1,6 @@
 <script>
   import data from "../data.json";
+  import { _ } from "svelte-i18n";
   import { Tile, Grid, Row, Column } from "carbon-components-svelte";
   import Section from "../components/section.svelte";
 
@@ -15,7 +16,7 @@
   );
 </script>
 
-<Section id="skills" title="Skills">
+<Section id="skills" title={$_("skills.title")}>
   <div class="skills-wrapper">
     <Grid condensed>
       <Row>
@@ -37,9 +38,6 @@
 </Section>
 
 <style>
-  .skills-wrapper {
-    padding: 0 1rem;
-  }
   progress,
   progress::-moz-progress-bar,
   progress::-webkit-progress-bar,
@@ -60,6 +58,10 @@
   }
   progress::-webkit-progress-value {
     background-color: var(--cds-interactive-01);
+  }
+
+  label {
+    cursor: pointer;
   }
   label progress {
     margin-top: var(--cds-spacing-03);

@@ -1,19 +1,24 @@
 <script>
   import data from "../data.json";
-  import { Button, Modal, Grid, Row, Column } from "carbon-components-svelte";
-  import ContactButton from "./contactButton.svelte";
+  import { _ } from "svelte-i18n";
+  import { Button, Modal } from "carbon-components-svelte";
+  import { localString } from "../services/i18n";
 
   let open = false;
-  /** @type 'en' | 'de' */
-  let lang = "en";
 </script>
 
-<Button size="small" kind="tertiary" on:click={() => (open = true)}
-  >Imprint</Button
->
+<Button size="small" kind="tertiary" on:click={() => (open = true)}>
+  {$_("imprint.title")}
+</Button>
 
-<Modal passiveModal bind:open modalHeading="Imprint" on:open on:close>
-  {#if lang == "de"}
+<Modal
+  passiveModal
+  bind:open
+  modalHeading={$_("imprint.title")}
+  on:open
+  on:close
+>
+  {#if $localString == "de"}
     <h2>Angaben gemäß &sect; 5 German Telemedia Act</h2>
     <p>{data.name}<br />Privatperson</p>
     <h3>Kontakt</h3>
