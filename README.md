@@ -1,4 +1,13 @@
 # [Portfolio site](https://kdomaratius.de)
+[My personal example](https://kdomaratius.de)
+
+## Features
+- Onepager
+- Multilingual
+- [Carbon Design System](https://www.carbondesignsystem.com/)
+- Sections for skills + cv + about
+- Section projects based on youre blog RSS
+
 
 ## Personalization
 1. Edit `data.json` in `/src` to your needs.
@@ -72,12 +81,6 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
-
-## Used main libraries
-
-- [Svelte.js](https://svelte.dev/)
-- [IBM Carbon DS](https://www.carbondesignsystem.com/)
-- [rss-parser](https://github.com/rbren/rss-parser)
 
 ## ToDo
 
