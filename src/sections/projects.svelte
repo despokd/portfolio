@@ -15,6 +15,10 @@
   $: feed = {
     title: data.projectsFeed,
     href: data.projectsFeed,
+    icon: {
+      src: "",
+      alt: "Source of projects",
+    },
   };
 
   $: items = [];
@@ -48,9 +52,14 @@
    * @param xmlFeed
    */
   function getFeed(xmlFeed) {
-    console.log(xmlFeed);
     feed.title = xmlFeed.getElementsByTagName("title")[0].textContent;
     feed.href = xmlFeed.getElementsByTagName("link")[0].textContent;
+    feed.icon.src = xmlFeed
+      .getElementsByTagName("image")[0]
+      .getElementsByTagName("url")[0].textContent;
+    feed.icon.alt = xmlFeed
+      .getElementsByTagName("image")[0]
+      .getElementsByTagName("title")[0].textContent;
   }
 
   /**
@@ -90,7 +99,14 @@
         style="margin-top: -0.6rem; margin-bottom: var(--cds-spacing-04);"
       >
         {$_("projects.posted_on")}
-        <a href={feed.href} target="_blank">{feed.title}</a>
+        <a href={feed.href} target="_blank">
+          {#if feed.icon.src}<img
+              class="favicon"
+              src={feed.icon.src}
+              alt={feed.icon.alt}
+            />&nbsp;{/if}
+          {feed.title}</a
+        >
       </Column>
       {#if isLoading}
         <Column sm={4} md={8} lg={8} class="project">
@@ -159,6 +175,11 @@
   h3,
   section p {
     margin-bottom: var(--cds-spacing-01);
+  }
+
+  .favicon {
+    max-height: var(--cds-icon-size-01);
+    max-width: var(--cds-icon-size-01);
   }
 
   .tag {
