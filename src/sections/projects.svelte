@@ -178,8 +178,9 @@
   }
 
   .favicon {
-    max-height: var(--cds-icon-size-01);
-    max-width: var(--cds-icon-size-01);
+    max-height: var(--cds-icon-size-02);
+    max-width: var(--cds-icon-size-02);
+    margin-bottom: -0.3rem;
   }
 
   .tag {
