@@ -33,6 +33,31 @@
 
   // init theme
   setTheme();
+
+  // setup web manifest
+  var dynamicManifest = {
+    name: data.name,
+    short_name: data.short_name,
+    description: "Portfolio of " + data.name,
+    start_url: window.location.origin,
+    scope: window.location.origin,
+    icons: [
+      {
+        src: "icon/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        src: "icon/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
+  };
+  const stringManifest = JSON.stringify(dynamicManifest);
+  const blob = new Blob([stringManifest], { type: "application/json" });
+  const manifestURL = URL.createObjectURL(blob);
+  document.querySelector("#webmanifest").setAttribute("href", manifestURL);
 </script>
 
 <svelte:head>
