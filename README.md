@@ -87,11 +87,5 @@
 
 ## ToDo
 
-- [x] Setup svelte app
-- [x] Setup IBM Carbon Design System
-- [x] Setup meta
-- [x] Setup twitter card
-- [x] Rebuild website content
-- [x] Multi language feature
-- [x] Make rss request async to projects source
 - [ ] Section about 'personality traits' + interests (maybe more photos)
+- [ ] Smooth on scroll transitions
