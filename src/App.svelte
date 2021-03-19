@@ -1,6 +1,7 @@
 <script>
   import data from "./data.json";
   import { setupI18n, isLocaleLoaded } from "./services/i18n";
+  import { Loading } from "carbon-components-svelte";
   import Header from "./sections/header.svelte";
   import Hero from "./sections/hero.svelte";
   import Skills from "./sections/skills.svelte";
@@ -88,7 +89,7 @@
     <Footer />
   </main>
 {:else}
-  <main><p>Loading...</p></main>
+  <main><Loading /></main>
 {/if}
 
 <style>
