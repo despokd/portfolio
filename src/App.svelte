@@ -8,6 +8,7 @@
   import CV from "./sections/cv.svelte";
   import Projects from "./sections/projects.svelte";
   import Footer from "./sections/footer.svelte";
+  import Credits from "./components/credits.svelte";
 
   // set language
   $: if (!$isLocaleLoaded) setupI18n();
@@ -87,6 +88,7 @@
     <CV />
     <Projects />
     <Footer />
+    <Credits />
   </main>
 {:else}
   <main><Loading /></main>

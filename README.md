@@ -88,7 +88,7 @@
 ## ToDo
 
 - [x] Add projects source
-- [ ] Add optional link to github repo
+- [x] Add credits
 - [ ] Section about 'personality traits' + interests (maybe more photos)
 - [ ] Smooth on scroll transitions
 

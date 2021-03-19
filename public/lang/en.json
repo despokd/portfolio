@@ -22,5 +22,9 @@
     },
     "imprint": {
         "title": "Imprint"
+    },
+    "credits": {
+        "customized_by": "Customized by",
+        "build_by": "Build_by"
     }
 }
