@@ -3,11 +3,11 @@
 [My personal example](https://kdomaratius.de)
 
 ## Features
-- Onepager
+- One pager
 - Multilingual
 - [Carbon Design System](https://www.carbondesignsystem.com/)
 - Sections for skills + cv + about
-- Section projects based on youre blog RSS
+- Section projects based on your blog RSS
 
 
 ## Personalization
