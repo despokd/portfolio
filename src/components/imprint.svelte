@@ -19,7 +19,7 @@
   on:close
 >
   {#if $localString == "de"}
-    <h2>Angaben gemäß &sect; 5 German Telemedia Act</h2>
+    <h2>Angaben gemäß &sect; 5 deutschem Telemediengesetz</h2>
     <p>{data.name}<br />Privatperson</p>
     <h3>Kontakt</h3>
     <dl>
