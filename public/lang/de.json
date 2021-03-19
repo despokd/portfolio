@@ -5,7 +5,8 @@
   "projects": {
     "title": "Projekte",
     "error": "Fehler beim Laden von Projekten",
-    "coming_soon": "Demnächst verfügbar"
+    "coming_soon": "Demnächst verfügbar",
+    "posted_on": "Veröffentlicht auf"
   },
   "skills": {
     "title": "Skills"

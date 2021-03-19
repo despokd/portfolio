@@ -11,7 +11,12 @@
   import Axios from "axios";
   import Section from "../components/section.svelte";
 
-  let feed;
+  // get projects from RSS
+  $: feed = {
+    title: data.projectsFeed,
+    href: data.projectsFeed,
+  };
+
   $: items = [];
   let isLoading = true;
   let isError = false;
@@ -21,9 +26,10 @@
   })
     .then((response) => {
       // success
-      // get feed with items
-      feed = response.data.children[0].children[0];
-      [...feed.getElementsByTagName("item")].forEach((xmlItem) => {
+      // format data
+      let xmlFeed = response.data.children[0].children[0];
+      getFeed(xmlFeed);
+      [...xmlFeed.getElementsByTagName("item")].forEach((xmlItem) => {
         items.push(getItem(xmlItem));
       });
     })
@@ -37,6 +43,20 @@
       isLoading = false;
     });
 
+  /**
+   * Set feed properties from RSS XML
+   * @param xmlFeed
+   */
+  function getFeed(xmlFeed) {
+    console.log(xmlFeed);
+    feed.title = xmlFeed.getElementsByTagName("title")[0].textContent;
+    feed.href = xmlFeed.getElementsByTagName("link")[0].textContent;
+  }
+
+  /**
+   * Convert XML RSS item to JS object
+   * @param xmlItem
+   */
   function getItem(xmlItem) {
     let item = {
       title: "",
@@ -47,17 +67,13 @@
     };
 
     item.title = xmlItem.getElementsByTagName("title")[0].textContent;
-
     item.url = xmlItem.getElementsByTagName("link")[0].textContent;
-
     item.description = xmlItem.getElementsByTagName(
       "description"
     )[0].textContent;
-
     [...xmlItem.getElementsByTagName("category")].forEach((elem) => {
       item.tags.push(elem.textContent);
     });
-
     item.date = new Date(
       xmlItem.getElementsByTagName("pubDate")[0].textContent
     );
@@ -69,6 +85,13 @@
 <Section id="projects" title={$_("projects.title")}>
   <Grid>
     <Row>
+      <Column
+        sm={4}
+        style="margin-top: -0.6rem; margin-bottom: var(--cds-spacing-04);"
+      >
+        {$_("projects.posted_on")}
+        <a href={feed.href} target="_blank">{feed.title}</a>
+      </Column>
       {#if isLoading}
         <Column sm={4} md={8} lg={8} class="project">
           <SkeletonPlaceholder style="width: 100%;" />
@@ -129,6 +152,7 @@
     text-decoration: underline;
     text-decoration-color: var(--cds-inverse-link);
   }
+
   p {
     padding: 0;
   }

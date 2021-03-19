@@ -5,7 +5,8 @@
     "projects": {
         "title": "Projects",
         "error": "Error loading projects",
-        "coming_soon": "Coming soon"
+        "coming_soon": "Coming soon",
+        "posted_on": "Posted on"
     },
     "skills": {
         "title": "Skills"
