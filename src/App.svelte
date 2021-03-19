@@ -1,4 +1,5 @@
 <script>
+  import data from "./data.json";
   import { setupI18n, isLocaleLoaded } from "./services/i18n";
   import Header from "./sections/header.svelte";
   import Hero from "./sections/hero.svelte";
@@ -33,6 +34,24 @@
   // init theme
   setTheme();
 </script>
+
+<svelte:head>
+  <title>{data.name}</title>
+  <meta name="author" content={data.name} />
+  <meta name="description" content="Portfolio page for {data.name}" />
+
+  <meta property="og:title" content={data.name} />
+  <meta property="og:description" content="Portfolio page for {data.name}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={window.location.href} />
+  <meta property="og:image" content="img/social.jpg" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:creator" content={data.name} />
+  <meta name="twitter:title" content={data.name} />
+  <meta name="twitter:description" content="Portfolio page for {data.name}" />
+  <meta name="twitter:image" content="img/social.jpg" />
+</svelte:head>
 
 {#if $isLocaleLoaded}
   <Header />

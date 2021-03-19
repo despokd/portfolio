@@ -12,10 +12,9 @@
 
 ## Personalization
 1. Edit `data.json` in `/src` to your needs.
-2. Edit `meta` tags in `/public/index.html`
-3. Edit app data in `/site.webmanifest`
-4. Update `portrait.jpg` and `social.jpg` to your picture in `/public/img/`
-5. Update icon files in `/public/icon/`
+2. Edit app data in `/site.webmanifest`
+3. Update `portrait.jpg` and `social.jpg` to your picture in `/public/img/`
+4. Update icon files in `/public/icon/`
 
 
 ## Setup app
