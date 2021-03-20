@@ -109,16 +109,16 @@
         >
       </Column>
       {#if isLoading}
-        <Column sm={4} md={8} lg={8} class="project">
+        <Column sm={4} md={4} lg={4} class="project">
           <SkeletonPlaceholder style="width: 100%;" />
         </Column>
-        <Column sm={4} md={8} lg={8} class="project">
+        <Column sm={4} md={4} lg={4} class="project">
           <SkeletonPlaceholder style="width: 100%;" />
         </Column>
-        <Column sm={4} md={8} lg={8} class="project">
+        <Column sm={4} md={4} lg={4} class="project">
           <SkeletonPlaceholder style="width: 100%;" />
         </Column>
-        <Column sm={4} md={8} lg={8} class="project">
+        <Column sm={4} md={4} lg={4} class="project">
           <SkeletonPlaceholder style="width: 100%;" />
         </Column>
       {:else if isError}
@@ -127,7 +127,7 @@
         <Column>{$_("projects.coming_soon")}</Column>
       {:else}
         {#each items as item}
-          <Column sm={4} md={8} lg={8} class="project">
+          <Column sm={4} md={4} lg={4} class="project">
             <a href={item.url} target="_blank">
               <Tile style="height: 100%;">
                 <article>

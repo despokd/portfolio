@@ -12,10 +12,6 @@
         "email": "contact@kdomaratius.de",
         "socials": [
             {
-                "type": "xing",
-                "url": "https://www.xing.com/profile/Kilian_Domaratius"
-            },
-            {
                 "type": "linkedIn",
                 "url": "https://www.linkedin.com/in/kilian-domaratius/"
             },
@@ -30,6 +26,44 @@
             {
                 "type": "reddit",
                 "url": "https://www.reddit.com/user/despokd/comments/"
+            },
+            {
+                "type": "xing",
+                "url": "https://www.xing.com/profile/Kilian_Domaratius"
+            }
+        ]
+    },
+    "aboutMe": {
+        "text": {
+            "en": "ToDo",
+            "de": "ToDo"
+        },
+        "hobbys": [
+            {
+                "en": "Developing",
+                "de": "Entwickeln"
+            },
+            {
+                "en": "Photographics",
+                "de": "Fotographie"
+            }
+        ],
+        "attributes": [
+            {
+                "en": "Independent working",
+                "de": "Selbstständiges Arbeiten"
+            },
+            {
+                "en": "Own initiative",
+                "de": "Eigeninitative"
+            },
+            {
+                "en": "Tendency to perfectionism",
+                "de": "Hang zum Perfektionismus"
+            },
+            {
+                "en": "Interest in Aesthetics",
+                "de": "Interesse an Ästhetik"
             }
         ]
     },

@@ -1,11 +1,12 @@
 <script>
   import data from "./data.json";
   import { setupI18n, isLocaleLoaded } from "./services/i18n";
-  import { Loading } from "carbon-components-svelte";
+  import { Loading, Grid, Row, Column } from "carbon-components-svelte";
   import Header from "./sections/header.svelte";
   import Hero from "./sections/hero.svelte";
   import Skills from "./sections/skills.svelte";
   import CV from "./sections/cv.svelte";
+  import AboutMe from "./sections/aboutMe.svelte";
   import Projects from "./sections/projects.svelte";
   import Footer from "./sections/footer.svelte";
   import Credits from "./components/credits.svelte";
@@ -85,7 +86,12 @@
   <main>
     <Hero />
     <Skills />
-    <CV />
+    <Grid style="padding: 0;">
+      <Row>
+        <Column><AboutMe /></Column>
+        <Column sm={4} md={5}><CV /></Column>
+      </Row>
+    </Grid>
     <Projects />
     <Footer />
     <Credits />

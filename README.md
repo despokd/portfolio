@@ -89,6 +89,7 @@
 
 - [x] Add projects source
 - [x] Add credits
-- [ ] Section about 'personality traits' + interests (maybe more photos)
+- [x] Section about 'personality traits' + interests (maybe more photos)
 - [ ] Smooth on scroll transitions
+- [ ] Create printable CV out of json + picture
 

@@ -20,6 +20,7 @@
 
   $: nav = [
     { title: $_("skills.title"), path: "#skills" },
+    { title: $_("aboutMe.title"), path: "#aboutMe" },
     { title: $_("cv.title"), path: "#cv" },
     { title: $_("projects.title"), path: "#projects" },
   ];

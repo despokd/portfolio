@@ -26,5 +26,9 @@
     "credits": {
         "customized_by": "Customized by",
         "build_by": "Build_by"
+    },
+    "aboutMe": {
+        "title": "About me",
+        "interests": "Interests"
     }
 }

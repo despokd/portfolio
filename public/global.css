@@ -47,7 +47,8 @@ a:focus > .bx--tile {
 }
 
 .employment,
-.project {
+.project,
+.about {
   margin-bottom: var(--cds-spacing-04);
 }
 .employment a:hover > .bx--tile,
