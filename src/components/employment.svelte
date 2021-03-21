@@ -7,6 +7,10 @@
   $: title = employment.title[$localString]
     ? employment.title[$localString]
     : "";
+  $: description =
+    employment.description && employment.description[$localString]
+      ? employment.description[$localString]
+      : "";
 
   let dateFrom = new Date(employment.from);
   let dateTo = !isNaN(Date.parse(employment.to))
@@ -21,6 +25,9 @@
     <Tile light={!isHightlight}>
       <p class="institution">{employment.institution}</p>
       <p class="title">{title}</p>
+      {#if description}
+        <p class="description">{description}</p>
+      {/if}
       <p class="employed">
         {dateFrom instanceof Date ? dateFrom.getFullYear() : dateFrom}
         -
@@ -49,11 +56,13 @@
     text-decoration-color: var(--cds-inverse-link);
   }
   .institution,
-  .title {
+  .title,
+  .description {
     margin-bottom: var(--cds-spacing-01);
   }
   .institution,
-  .employed {
+  .employed,
+  .description {
     color: var(--cds-text-02);
     font-size: var(--cds-body-short-01-font-size);
   }

@@ -156,10 +156,28 @@
                 "en": "Training as an IT specialist for application development",
                 "de": "Ausbildung zum Fachinformatiker für Anwendungsentwicklung"
             },
+            "description": {
+                "en": "Fullstack web development, main activity WordPress frontend",
+                "de": "Fullstack Webentwicklung, Haupttätigkeit WordPress Frontend"
+            },
             "url": "https://www.afbb.de",
             "from": "2018-09-15",
             "to": "2021-02-03",
             "isHighlight": true
+        },
+        {
+            "institution": "EventClass GmbH",
+            "title": {
+                "en": "Internship",
+                "de": "Praktikant"
+            },
+            "description": {
+                "en": "Web development and data maintenance",
+                "de": "Webentwicklung und Datenpflege"
+            },
+            "url": "https://www.afbb.de",
+            "from": "2018-09",
+            "to": "2018-09"
         },
         {
             "institution": "TU Dresden",
