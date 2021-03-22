@@ -90,8 +90,9 @@
 - [x] Add projects source
 - [x] Add credits
 - [x] Section about 'personality traits' + interests (maybe more photos)
-- [ ] Smooth on scroll transitions
+- [x] Smooth on scroll transitions
 - [x] Create printable CV out of json + picture
 - [x] Add optional job description
 - [x] Add languages
+- [x] Add profile image for mobile devices
 

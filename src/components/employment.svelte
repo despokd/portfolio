@@ -53,6 +53,7 @@
 
   .institution {
     text-decoration: underline;
+    -webkit-text-decoration-color: var(--cds-inverse-link);
     text-decoration-color: var(--cds-inverse-link);
   }
   .institution,

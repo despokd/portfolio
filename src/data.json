@@ -7,6 +7,10 @@
         "en": "I recently finished my education as an IT specialist and created websites and web modules in a small company in Dresden. In my spare time I like to create small web applications and websites for private use.",
         "de": "Ich habe vor kurzem meine Ausbildung zum Fachinformatiker abgeschlossen und erstellte Webseiten und Webmodule in einer kleinen Firma in Dresden. In meiner Freizeit erstelle ich gerne kleine Webanwendungen und Webseiten für den privaten Gebrauch."
     },
+    "about_short": {
+        "en": "I'm Kilian Domaratius, 23 years old from Dresden. I love frameworks and new techniques.",
+        "de": "Ich bin Kilian Domaratius, 23 Jahre aus Dresden. Liebe Frameworks und neue Techniken."
+    },
     "projectsFeed": "https://tequilian.de/category/projekte/feed/",
     "contact": {
         "email": "contact@kdomaratius.de",
@@ -26,10 +30,6 @@
         ]
     },
     "aboutMe": {
-        "text": {
-            "en": "ToDo",
-            "de": "ToDo"
-        },
         "languages": [
             {
                 "name": {

@@ -30,8 +30,8 @@
 
 <Header
   persistentHamburgerMenu={true}
-  company={$_("app.title")}
-  platformName={data.name}
+  company={data.short_name}
+  platformName={$_("app.title")}
   bind:isSideNavOpen
 >
   <div slot="skip-to-content">

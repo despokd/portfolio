@@ -1,3 +1,5 @@
+<svelte:options immutable={true} />
+
 <script>
   import data from "../data.json";
   import { _ } from "svelte-i18n";

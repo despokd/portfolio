@@ -87,3 +87,7 @@ a:focus > .bx--tile {
 .bx--modal-container {
   text-align: left;
 }
+
+#hero {
+  background: var(--cds-ui-01);
+}

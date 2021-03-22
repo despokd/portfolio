@@ -3,11 +3,11 @@
   import { setupI18n, isLocaleLoaded } from "./services/i18n";
   import { Loading } from "carbon-components-svelte";
   import Header from "./sections/header.svelte";
-
   import { Router, Route } from "svelte-routing";
   import Home from "./pages/Home.svelte";
 
-  export let url = ""; //This property is necessary declare to avoid ignore the Router
+  // this property is necessary declare to avoid ignore the Router
+  export let url = "";
 
   // set language
   $: if (!$isLocaleLoaded) setupI18n();
@@ -42,6 +42,7 @@
     description: "Portfolio of " + data.name,
     start_url: window.location.origin,
     scope: window.location.origin,
+    display: "minimal-ui",
     icons: [
       {
         src: "icon/android-chrome-192x192.png",

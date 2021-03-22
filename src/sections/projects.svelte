@@ -165,6 +165,7 @@
   h3 {
     font-size: var(--cds-productive-heading-03-font-size);
     text-decoration: underline;
+    -webkit-text-decoration-color: var(--cds-inverse-link);
     text-decoration-color: var(--cds-inverse-link);
   }
 

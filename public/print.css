@@ -15,6 +15,7 @@
   * {
     color: #333;
     background-color: white;
+    opacity: 1 !important; /* ignore transitions + display elements */
   }
 
   html {

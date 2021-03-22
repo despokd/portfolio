@@ -4,13 +4,19 @@
   import { localString } from "../services/i18n";
   import { Tile, Grid, Row, Column } from "carbon-components-svelte";
   import Section from "../components/section.svelte";
+
+  let isMobile = window.innerWidth <= 671;
+  $: about = data.about[$localString] ? data.about[$localString] : "";
+  $: about_short = data.about_short[$localString]
+    ? data.about_short[$localString]
+    : "";
 </script>
 
 <Section id="aboutMe" title={$_("aboutMe.title")}>
   <Grid>
     <Row>
       <Column sm={4} class="about">
-        {data.aboutMe.text[$localString]}
+        <p>{isMobile ? about : about_short}</p>
       </Column>
     </Row>
     <Row>
