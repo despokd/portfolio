@@ -20,10 +20,15 @@
     <slot />
   </section>
 </Saos>
+<div class="section-spacer" />
 
 <style>
   h2 {
     margin-bottom: var(--cds-spacing-04);
+  }
+
+  .section-spacer {
+    height: 2rem;
   }
 
   /* avoid overlapping header by scroll to anchor */
