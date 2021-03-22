@@ -6,13 +6,13 @@
 - One pager
 - Multilingual
 - [Carbon Design System](https://www.carbondesignsystem.com/)
-- Sections for skills + cv + about
+- Sections for skills + cv + about + attributes
 - Section projects based on your blog RSS
-
+- Print optimized for CV
 
 ## Personalization
 1. Edit `data.json` in `/src` to your needs.
-2. Update `portrait.jpg` and `social.jpg` to your picture in `/public/img/`
+2. Update `portrait.jpg`, `profile.jpg` and `social.jpg` to your picture in `/public/img/`
 3. Update icon files in `/public/icon/`
 
 ## Setup app
@@ -82,17 +82,3 @@
   surge public my-project.surge.sh
   ```
 </details>
-
-
-
-## ToDo
-
-- [x] Add projects source
-- [x] Add credits
-- [x] Section about 'personality traits' + interests (maybe more photos)
-- [x] Smooth on scroll transitions
-- [x] Create printable CV out of json + picture
-- [x] Add optional job description
-- [x] Add languages
-- [x] Add profile image for mobile devices
-
