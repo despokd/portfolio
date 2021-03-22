@@ -96,6 +96,7 @@
     <Row>
       <Column
         sm={4}
+        class="hide-on-print"
         style="margin-top: -0.6rem; margin-bottom: var(--cds-spacing-04);"
       >
         {$_("projects.posted_on")}
@@ -134,9 +135,7 @@
                   <header>
                     <h3>{item.title}</h3>
                   </header>
-                  <section>
-                    <p>{item.description}</p>
-                  </section>
+                  <p>{item.description}</p>
                   <footer>
                     <p>
                       {#if item.date}
@@ -169,12 +168,13 @@
     text-decoration-color: var(--cds-inverse-link);
   }
 
-  p {
-    padding: 0;
-  }
   h3,
-  section p {
+  p {
     margin-bottom: var(--cds-spacing-01);
+  }
+
+  footer p {
+    padding: 0;
   }
 
   .favicon {

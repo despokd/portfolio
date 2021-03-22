@@ -20,10 +20,14 @@
 
 <Section id="cv" title={$_("cv.title")}>
   <Grid>
-    <Row>
-      <Column sm={4} style="margin-bottom: var(--cds-spacing-04);">
-        <Button size="small" icon={Printer16}>Print as pdf</Button>
+    <Row class="hide-on-print">
+      <Column sm={4}>
+        <Button size="small" icon={Printer16} on:click={() => window.print()}>
+          {$_("cv.print")}
+        </Button>
       </Column>
+    </Row>
+    <Row>
       {#each orderedCv as employment}
         <Employment {employment} />
       {/each}

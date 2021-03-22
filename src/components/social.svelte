@@ -8,31 +8,22 @@
   export let social = "custom";
   export let small = false;
 
-  let size = null;
-  if (small) size = "small";
+  let size = small ? "small" : null;
+  let desc = social.name;
+  let icon;
 
-  let desc = social.type;
-  let icon = Link20;
-
-  switch (social.type) {
-    case "xing":
-      desc = "Xing";
+  switch (social.name) {
+    case "Xing":
       icon = LogoXing20;
       break;
-    case "linkedIn":
-      desc = "LinkedIn";
+    case "LinkedIn":
       icon = LogoLinkedin20;
       break;
-    case "github":
-      desc = "Github";
+    case "Github":
       icon = LogoGithub20;
       break;
-    case "stackOverflow":
-      desc = "Stack Overflow";
-      break;
-    case "reddit":
-      desc = "Reddit";
-      break;
+    default:
+      icon = Link20;
   }
 </script>
 

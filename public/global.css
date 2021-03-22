@@ -11,6 +11,14 @@ dl {
   padding: 0 0 15px;
 }
 
+section {
+  margin: var(--cds-spacing-08) 0;
+}
+
+.show-on-print {
+  display: none;
+}
+
 /* alignment */
 .text-right {
   text-align: right;

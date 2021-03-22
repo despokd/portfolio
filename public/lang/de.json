@@ -12,7 +12,8 @@
     "title": "Skills"
   },
   "cv": {
-    "title": "CV"
+    "title": "CV",
+    "print": "Als PDF drucken"
   },
   "hero": {
     "title": "Hero"
@@ -29,6 +30,8 @@
   },
   "aboutMe": {
     "title": "Über mich",
-    "interests": "Interessen"
+    "attributes": "Eigenschaften",
+    "interests": "Interessen",
+    "languages": "Sprachen"
   }
 }

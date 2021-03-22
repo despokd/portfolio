@@ -5,7 +5,7 @@
   export let title = "";
 </script>
 
-<section {id} style="margin: var(--cds-spacing-08) 0;">
+<section {id}>
   {#if title}
     <Grid>
       <Row>

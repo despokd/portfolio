@@ -91,6 +91,7 @@
 - [x] Add credits
 - [x] Section about 'personality traits' + interests (maybe more photos)
 - [ ] Smooth on scroll transitions
-- [ ] Create printable CV out of json + picture
+- [x] Create printable CV out of json + picture
 - [x] Add optional job description
+- [x] Add languages
 

@@ -7,7 +7,7 @@
   let creator = "Kilian Domaratius";
 </script>
 
-<Grid>
+<Grid class="credits">
   <Row>
     <Column style="margin-bottom: var(--cds-spacing-04);">
       {#if creator !== data.name}

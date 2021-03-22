@@ -21,7 +21,14 @@
     <Grid condensed>
       <Row>
         {#each orderedSkills as skill}
-          <Column sm={2} md={2} lg={4} xlg={2} max={2} class="skill">
+          <Column
+            sm={2}
+            md={2}
+            lg={4}
+            xlg={2}
+            max={2}
+            class={skill.percent <= 40 ? "skill hide-on-print" : "skill"}
+          >
             <a href={skill.url} target="_blank">
               <Tile light={skill.percent <= 50}>
                 <label>

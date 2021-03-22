@@ -5,13 +5,14 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public"
+    "start": "sirv public -s"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
     "axios": "^0.21.1",
     "carbon-components-svelte": "^0.29.2",
+    "print-js": "^1.6.0",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-json": "^4.0.0",
@@ -21,7 +22,8 @@
     "sass": "^1.32.8",
     "svelte": "^3.0.0",
     "svelte-i18n": "^3.3.6",
-    "svelte-preprocess": "^4.6.9"
+    "svelte-preprocess": "^4.6.9",
+    "svelte-routing": "^1.5.0"
   },
   "dependencies": {
     "sirv-cli": "^1.0.0"

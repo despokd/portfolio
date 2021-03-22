@@ -12,23 +12,15 @@
         "email": "contact@kdomaratius.de",
         "socials": [
             {
-                "type": "linkedIn",
+                "name": "LinkedIn",
                 "url": "https://www.linkedin.com/in/kilian-domaratius/"
             },
             {
-                "type": "github",
+                "name": "Github",
                 "url": "https://github.com/despokd"
             },
             {
-                "type": "stackOverflow",
-                "url": "https://stackoverflow.com/users/story/10036524"
-            },
-            {
-                "type": "reddit",
-                "url": "https://www.reddit.com/user/despokd/comments/"
-            },
-            {
-                "type": "xing",
+                "name": "Xing",
                 "url": "https://www.xing.com/profile/Kilian_Domaratius"
             }
         ]
@@ -38,14 +30,27 @@
             "en": "ToDo",
             "de": "ToDo"
         },
-        "hobbys": [
+        "languages": [
             {
-                "en": "Developing",
-                "de": "Entwickeln"
+                "name": {
+                    "en": "German",
+                    "de": "Deutsch"
+                },
+                "level": "C2"
             },
             {
-                "en": "Photographics",
-                "de": "Fotographie"
+                "name": {
+                    "en": "English",
+                    "de": "Englisch"
+                },
+                "level": "B1"
+            },
+            {
+                "name": {
+                    "en": "Italian",
+                    "de": "Italienisch"
+                },
+                "level": "A1"
             }
         ],
         "attributes": [
@@ -64,6 +69,16 @@
             {
                 "en": "Interest in Aesthetics",
                 "de": "Interesse an Ästhetik"
+            }
+        ],
+        "hobbys": [
+            {
+                "en": "Developing",
+                "de": "Entwickeln"
+            },
+            {
+                "en": "Photographics",
+                "de": "Fotographie"
             }
         ]
     },
@@ -120,7 +135,7 @@
         },
         {
             "name": "Vue.js",
-            "percent": 70,
+            "percent": 60,
             "url": "https://vuejs.org/"
         },
         {
@@ -135,7 +150,7 @@
         },
         {
             "name": "PrestaShop",
-            "percent": 66,
+            "percent": 50,
             "url": "https://www.prestashop.com/"
         },
         {
@@ -153,12 +168,12 @@
         {
             "institution": "AFBB gGmbH / EventClass GmbH",
             "title": {
-                "en": "Training as an IT specialist for application development",
-                "de": "Ausbildung zum Fachinformatiker für Anwendungsentwicklung"
+                "en": "Training as an IT specialist for application development (shortened)",
+                "de": "Ausbildung zum Fachinformatiker für Anwendungsentwicklung (verkürzt)"
             },
             "description": {
-                "en": "Fullstack web development, main activity WordPress frontend",
-                "de": "Fullstack Webentwicklung, Haupttätigkeit WordPress Frontend"
+                "en": "Fullstack web development, main activity WordPress frontend, Mark 3",
+                "de": "Fullstack Webentwicklung, Haupttätigkeit WordPress Frontend, Note 3"
             },
             "url": "https://www.afbb.de",
             "from": "2018-09-15",
@@ -168,14 +183,14 @@
         {
             "institution": "EventClass GmbH",
             "title": {
-                "en": "Internship",
-                "de": "Praktikant"
+                "en": "Internship + project assistance",
+                "de": "Praktikant + Projektassistenz"
             },
             "description": {
                 "en": "Web development and data maintenance",
                 "de": "Webentwicklung und Datenpflege"
             },
-            "url": "https://www.afbb.de",
+            "url": "https://www.eventclass.com",
             "from": "2018-09",
             "to": "2018-09"
         },
@@ -195,9 +210,14 @@
                 "en": "High school graduation",
                 "de": "Abitur"
             },
+            "description": {
+                "en": "Graduation with 2.6",
+                "de": "Abschluss mit 2,6"
+            },
             "url": "https://gutenberggymnasium.de/",
             "from": "2009",
-            "to": "2016"
+            "to": "2016",
+            "isHighlight": true
         },
         {
             "institution": "Lessinggymnasium Mannheim",
