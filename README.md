@@ -82,3 +82,8 @@
   surge public my-project.surge.sh
   ```
 </details>
+
+## ToDo
+
+- [ ] Skill custom categories
+- [ ] CV categories (Education, experience)
