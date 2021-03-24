@@ -104,12 +104,12 @@
             "url": "https://www.php.net/"
         },
         {
-            "name": "Illustrator",
+            "name": "Adobe CC Illustrator",
             "percent": 40,
             "url": "https://www.adobe.com/products/illustrator.html"
         },
         {
-            "name": "Photoshop",
+            "name": "Adobe CC Photoshop",
             "percent": 30,
             "url": "https://www.adobe.com/products/photoshop.html"
         },
@@ -166,14 +166,29 @@
     ],
     "cv": [
         {
-            "institution": "AFBB gGmbH / EventClass GmbH",
+            "institution": "EventClass GmbH",
             "title": {
-                "en": "Training as an IT specialist for application development (shortened)",
-                "de": "Ausbildung zum Fachinformatiker für Anwendungsentwicklung (verkürzt)"
+                "en": "IT specialist for application development (IHK)",
+                "de": "Fachinformatiker für Anwendungentwicklung (IHK)"
             },
             "description": {
-                "en": "Fullstack web development, main activity WordPress frontend, Mark 3",
-                "de": "Fullstack Webentwicklung, Haupttätigkeit WordPress Frontend, Note 3"
+                "en": "Full stack web development",
+                "de": "Full-Stack Webdevelopment"
+            },
+            "url": "https://www.eventclass.com",
+            "from": "2018-09-15",
+            "to": "2021-02-03",
+            "isHighlight": true
+        },
+        {
+            "institution": "AfbB gGmbH",
+            "title": {
+                "en": "IT specialist for application development (IHK)",
+                "de": "Fachinformatiker für Anwendungentwicklung (IHK)"
+            },
+            "description": {
+                "en": "Mark 3",
+                "de": "Note 3"
             },
             "url": "https://www.afbb.de",
             "from": "2018-09-15",
@@ -187,22 +202,22 @@
                 "de": "Praktikant + Projektassistenz"
             },
             "description": {
-                "en": "Web development and data maintenance",
-                "de": "Webentwicklung und Datenpflege"
+                "en": "Web development, data management",
+                "de": "Webdevelopment, Datenmanagement"
             },
             "url": "https://www.eventclass.com",
             "from": "2018-09",
             "to": "2018-09"
         },
         {
-            "institution": "TU Dresden",
+            "institution": "Technische Universität Dresden",
             "title": {
                 "en": "Bachelor of Computer Science (aspired to)",
                 "de": "Informatik Bachelor (angestrebt)"
             },
             "url": "https://tu-dresden.de/",
-            "from": "2016",
-            "to": "2018"
+            "from": "2016-10",
+            "to": "2018-09"
         },
         {
             "institution": "Johann Gutenberggymnasium Erfurt",
@@ -215,8 +230,8 @@
                 "de": "Abschluss mit 2,6"
             },
             "url": "https://gutenberggymnasium.de/",
-            "from": "2009",
-            "to": "2016",
+            "from": "2009-09",
+            "to": "2016-10",
             "isHighlight": true
         },
         {
@@ -226,8 +241,8 @@
                 "de": "Gymnasium"
             },
             "url": "https://www.lessing-gymnasium.com/",
-            "from": "2008",
-            "to": "2009"
+            "from": "2008-08",
+            "to": "2009-09"
         },
         {
             "institution": "IBM",
@@ -236,8 +251,8 @@
                 "de": "Schülerpraktikum"
             },
             "url": "https://www.ibm.com/",
-            "from": "2013",
-            "to": "2013"
+            "from": "2013-03",
+            "to": "2013-03"
         }
     ]
 }

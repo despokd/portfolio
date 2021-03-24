@@ -1,6 +1,7 @@
 <script>
   import { Tile, Column } from "carbon-components-svelte";
   import { localString } from "../services/i18n";
+  import dateFormat from "dateformat";
 
   export let employment;
 
@@ -12,6 +13,7 @@
       ? employment.description[$localString]
       : "";
 
+  let dateFormated = "mm/yyyy";
   let dateFrom = new Date(employment.from);
   let dateTo = !isNaN(Date.parse(employment.to))
     ? new Date(employment.to)
@@ -29,15 +31,19 @@
         <p class="description">{description}</p>
       {/if}
       <p class="employed">
-        {dateFrom instanceof Date ? dateFrom.getFullYear() : dateFrom}
-        -
-        <span class:text-highlight={isActive}>
-          {#if dateTo instanceof Date}
-            {dateTo.getFullYear()}
-          {:else}
-            {dateTo === "now" || dateTo == "" ? "Now" : dateTo}
-          {/if}
-        </span>
+        {dateFrom instanceof Date
+          ? dateFormat(dateFrom, dateFormated)
+          : dateFrom}
+        {#if dateFormat(dateFrom, dateFormated) !== dateFormat(dateTo, dateFormated)}
+          -
+          <span class:text-highlight={isActive}>
+            {#if dateTo instanceof Date}
+              {dateFormat(dateTo, dateFormated)}
+            {:else}
+              {dateTo === "now" || dateTo == "" ? "Now" : dateTo}
+            {/if}
+          </span>
+        {/if}
       </p>
     </Tile>
   </a>

@@ -12,6 +12,7 @@
     "@rollup/plugin-node-resolve": "^11.0.0",
     "axios": "^0.21.1",
     "carbon-components-svelte": "^0.29.2",
+    "dateformat": "^4.5.1",
     "print-js": "^1.6.0",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",

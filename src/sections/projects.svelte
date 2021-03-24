@@ -1,6 +1,7 @@
 <script>
   import data from "../data.json";
   import { _ } from "svelte-i18n";
+  import dateFormat from "dateformat";
   import {
     Grid,
     Row,
@@ -140,7 +141,7 @@
                     <p>
                       {#if item.date}
                         <time datetime={item.date.toISOString()} class="tag">
-                          {item.date.toLocaleDateString()}
+                          {dateFormat(item.date, "yyyy")}
                         </time>
                       {/if}
                       {#each item.tags as tag, index}
