@@ -11,13 +11,13 @@
 </script>
 
 <Hero />
-<Skills />
 <Grid style="padding: 0;">
   <Row>
     <Column sm={4} md={5}><CV /></Column>
     <Column><AboutMe /></Column>
   </Row>
 </Grid>
+<Skills />
 <Projects />
 <Footer />
 <Credits />

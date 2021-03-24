@@ -2,8 +2,7 @@
   import data from "../data.json";
   import { _ } from "svelte-i18n";
   import { localString } from "../services/i18n";
-  import { Grid, Row, Column, Button } from "carbon-components-svelte";
-  import Printer16 from "carbon-icons-svelte/lib/Printer16";
+  import { Grid, Row, Column } from "carbon-components-svelte";
   import Section from "../components/section.svelte";
   import Employment from "../components/employment.svelte";
 
@@ -34,7 +33,6 @@
     let category = val.category ? val.category : "default";
     orderedByCategory[category].employments.push(val);
   });
-  console.log(orderedByCategory);
 </script>
 
 <Section id="cv" title={$_("cv.title")}>

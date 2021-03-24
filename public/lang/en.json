@@ -9,7 +9,8 @@
         "posted_on": "Posted on"
     },
     "skills": {
-        "title": "Skills"
+        "title": "Skills",
+        "other": "Other"
     },
     "cv": {
         "title": "CV"

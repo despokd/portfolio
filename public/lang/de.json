@@ -9,7 +9,8 @@
     "posted_on": "Veröffentlicht auf"
   },
   "skills": {
-    "title": "Skills"
+    "title": "Skills",
+    "other": "Sonstiges"
   },
   "cv": {
     "title": "CV"

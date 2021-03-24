@@ -82,26 +82,56 @@
             }
         ]
     },
+    "skillsCategories": {
+        "fe": {
+            "name": {
+                "en": "Frontend Development",
+                "de": "Frontend-Development"
+            }
+        },
+        "be": {
+            "name": {
+                "en": "Backend Development",
+                "de": "Backend-Development"
+            }
+        },
+        "cms": {
+            "name": {
+                "en": "CMS",
+                "de": "CMS"
+            }
+        },
+        "dev": {
+            "name": {
+                "en": "DevOps",
+                "de": "DevOps"
+            }
+        }
+    },
     "skills": [
         {
             "name": "HTML",
             "percent": 90,
-            "url": "https://developer.mozilla.org/docs/Web/HTML/HTML5"
+            "url": "https://developer.mozilla.org/docs/Web/HTML/HTML5",
+            "category": "fe"
         },
         {
             "name": "CSS",
             "percent": 70,
-            "url": "https://developer.mozilla.org/docs/Web/CSS"
+            "url": "https://developer.mozilla.org/docs/Web/CSS",
+            "category": "fe"
         },
         {
             "name": "JavaScript",
             "percent": 50,
-            "url": "https://developer.mozilla.org/docs/Web/JavaScript"
+            "url": "https://developer.mozilla.org/docs/Web/JavaScript",
+            "category": "fe"
         },
         {
             "name": "PHP",
             "percent": 50,
-            "url": "https://www.php.net/"
+            "url": "https://www.php.net/",
+            "category": "be"
         },
         {
             "name": "Adobe CC Illustrator",
@@ -116,52 +146,67 @@
         {
             "name": "WordPress",
             "percent": 66,
-            "url": "https://wordpress.org/"
+            "url": "https://wordpress.org/",
+            "category": "cms"
         },
         {
             "name": "MySQL",
             "percent": 40,
-            "url": "https://www.mysql.com/"
+            "url": "https://www.mysql.com/",
+            "category": "be"
         },
         {
             "name": "Classic ASP",
             "percent": 30,
-            "url": "https://classicasp.site/classic-asp-support/a-brief-history-of-classic-asp/"
+            "url": "https://classicasp.site/classic-asp-support/a-brief-history-of-classic-asp/",
+            "category": "be"
         },
         {
             "name": "Smarty (PHP)",
             "percent": 40,
-            "url": "https://www.smarty.net/"
+            "url": "https://www.smarty.net/",
+            "category": "fe"
         },
         {
             "name": "Vue.js",
             "percent": 60,
-            "url": "https://vuejs.org/"
+            "url": "https://vuejs.org/",
+            "category": "fe"
         },
         {
             "name": "Bootstrap",
             "percent": 75,
-            "url": "https://getbootstrap.com/"
+            "url": "https://getbootstrap.com/",
+            "category": "fe"
         },
         {
             "name": "jQuery",
             "percent": 40,
-            "url": "https://jquery.com/"
+            "url": "https://jquery.com/",
+            "category": "fe"
         },
         {
             "name": "PrestaShop",
             "percent": 50,
-            "url": "https://www.prestashop.com/"
+            "url": "https://www.prestashop.com/",
+            "category": "cms"
         },
         {
             "name": "Svelte.js",
             "percent": 40,
-            "url": "https://svelte.dev/"
+            "url": "https://svelte.dev/",
+            "category": "fe"
         },
         {
             "name": "Docker",
             "percent": 5,
-            "url": "https://www.docker.com/"
+            "url": "https://www.docker.com/",
+            "category": "dev"
+        },
+        {
+            "name": "MS Office",
+            "percent": 50,
+            "url": "https://www.microsoft.com/microsoft-365"
         }
     ],
     "cvCategories": {
@@ -202,8 +247,8 @@
                 "de": "Fachinformatiker für Anwendungentwicklung (IHK)"
             },
             "description": {
-                "en": "Mark 3",
-                "de": "Note 3"
+                "en": "Graduation with 3",
+                "de": "Abschluss mit 3"
             },
             "url": "https://www.afbb.de",
             "from": "2018-09-15",
@@ -240,8 +285,8 @@
         {
             "institution": "Johann Gutenberggymnasium Erfurt",
             "title": {
-                "en": "High school graduation",
-                "de": "Abitur"
+                "en": "A-Level",
+                "de": "Hochschulreife"
             },
             "description": {
                 "en": "Graduation with 2.6",
