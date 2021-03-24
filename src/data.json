@@ -164,6 +164,20 @@
             "url": "https://www.docker.com/"
         }
     ],
+    "cvCategories": {
+        "job": {
+            "name": {
+                "en": "Practice",
+                "de": "Praxis"
+            }
+        },
+        "edu": {
+            "name": {
+                "en": "Education",
+                "de": "Bildung"
+            }
+        }
+    },
     "cv": [
         {
             "institution": "EventClass GmbH",
@@ -178,6 +192,7 @@
             "url": "https://www.eventclass.com",
             "from": "2018-09-15",
             "to": "2021-02-03",
+            "category": "job",
             "isHighlight": true
         },
         {
@@ -193,6 +208,7 @@
             "url": "https://www.afbb.de",
             "from": "2018-09-15",
             "to": "2021-02-03",
+            "category": "edu",
             "isHighlight": true
         },
         {
@@ -207,7 +223,8 @@
             },
             "url": "https://www.eventclass.com",
             "from": "2018-09",
-            "to": "2018-09"
+            "to": "2018-09",
+            "category": "job"
         },
         {
             "institution": "Technische Universität Dresden",
@@ -217,7 +234,8 @@
             },
             "url": "https://tu-dresden.de/",
             "from": "2016-10",
-            "to": "2018-09"
+            "to": "2018-09",
+            "category": "edu"
         },
         {
             "institution": "Johann Gutenberggymnasium Erfurt",
@@ -232,6 +250,7 @@
             "url": "https://gutenberggymnasium.de/",
             "from": "2009-09",
             "to": "2016-06",
+            "category": "edu",
             "isHighlight": true
         },
         {
@@ -242,7 +261,8 @@
             },
             "url": "https://www.lessing-gymnasium.com/",
             "from": "2008-08",
-            "to": "2009-09"
+            "to": "2009-09",
+            "category": "edu"
         },
         {
             "institution": "IBM",
@@ -252,7 +272,8 @@
             },
             "url": "https://www.ibm.com/",
             "from": "2013-03",
-            "to": "2013-03"
+            "to": "2013-03",
+            "category": "job"
         }
     ]
 }

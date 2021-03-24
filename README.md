@@ -86,4 +86,4 @@
 ## ToDo
 
 - [ ] Skill custom categories
-- [ ] CV categories (Education, experience)
+- [x] CV categories (Education, experience)
