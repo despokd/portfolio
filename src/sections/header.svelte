@@ -21,9 +21,9 @@
   let isOpen = false;
 
   $: nav = [
-    { title: $_("skills.title"), path: "/#skills" },
     { title: $_("cv.title"), path: "/#cv" },
     { title: $_("aboutMe.title"), path: "/#aboutMe" },
+    { title: $_("skills.title"), path: "/#skills" },
     { title: $_("projects.title"), path: "/#projects" },
   ];
 </script>
