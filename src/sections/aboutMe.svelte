@@ -31,21 +31,21 @@
     </Row>
     <Row style="margin-top: var(--cds-spacing-06);">
       <Column sm={4} class="about">
-        <h3>{$_("aboutMe.interests")}</h3>
-      </Column>
-      {#each data.aboutMe.hobbys as hobby}
-        <Column sm={4} md={8} lg={8} class="about">
-          <Tile>{hobby[$localString]}</Tile>
-        </Column>
-      {/each}
-    </Row>
-    <Row style="margin-top: var(--cds-spacing-06);">
-      <Column sm={4} class="about">
         <h3>{$_("aboutMe.languages")}</h3>
       </Column>
       {#each data.aboutMe.languages as lang}
         <Column sm={4} md={8} lg={8} class="about">
           <Tile>{lang.name[$localString]} - {lang.level}</Tile>
+        </Column>
+      {/each}
+    </Row>
+    <Row style="margin-top: var(--cds-spacing-06);">
+      <Column sm={4} class="about">
+        <h3>{$_("aboutMe.interests")}</h3>
+      </Column>
+      {#each data.aboutMe.hobbys as hobby}
+        <Column sm={4} md={8} lg={8} class="about">
+          <Tile>{hobby[$localString]}</Tile>
         </Column>
       {/each}
     </Row>
