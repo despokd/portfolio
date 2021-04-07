@@ -85,5 +85,4 @@
 
 ## ToDo
 
-- [x] Skill custom categories
-- [x] CV categories (Education, experience)
+- [ ] Add job requirements ( money, holidays, remote, flex time, full time, ...)
