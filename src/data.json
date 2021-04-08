@@ -20,12 +20,16 @@
                 "url": "https://www.linkedin.com/in/kilian-domaratius/"
             },
             {
+                "name": "Xing",
+                "url": "https://www.xing.com/profile/Kilian_Domaratius"
+            },
+            {
                 "name": "Github",
                 "url": "https://github.com/despokd"
             },
             {
-                "name": "Xing",
-                "url": "https://www.xing.com/profile/Kilian_Domaratius"
+                "name": "CodePen",
+                "url": "https://codepen.io/despokd"
             }
         ]
     },
