@@ -33,7 +33,7 @@ jobs:
       - name: Install dependencies, build page
         uses: actions/setup-node@v1
         with:
-          node-version ${{ matrix.node-version }}
+          node-version: ${{ matrix.node-version }}
       - run: |
           npm i
           npm run build
@@ -41,6 +41,6 @@ jobs:
       - name: Deploy to Github pages
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          GITHUB_TOKEN: ${{ secrects.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: public
