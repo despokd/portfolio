@@ -229,6 +229,22 @@
     },
     "cv": [
         {
+            "institution": "WEBneo GmbH",
+            "title": {
+                "en": "Trainee in development",
+                "de": "Trainee in der Entwicklung"
+            },
+            "description": {
+                "en": "Web development",
+                "de": "Web development"
+            },
+            "url": "https://webneo.de",
+            "from": "2021-05-24",
+            "to": "2022-05-23",
+            "category": "job",
+            "isHighlight": true
+        },
+        {
             "institution": "EventClass GmbH",
             "title": {
                 "en": "IT specialist for application development (IHK)",
@@ -242,7 +258,7 @@
             "from": "2018-09-15",
             "to": "2021-02-03",
             "category": "job",
-            "isHighlight": true
+            "isHighlight": false
         },
         {
             "institution": "AfbB gGmbH",
