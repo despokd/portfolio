@@ -86,3 +86,4 @@
 ## ToDo
 
 - [ ] Add job requirements ( money, holidays, remote, flex time, full time, ...)
+- [ ] Translation for 'Now' (Current jobs)
