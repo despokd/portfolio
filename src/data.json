@@ -229,13 +229,29 @@
     },
     "cv": [
         {
+            "institution": "Techillian",
+            "title": {
+                "en": "CEO",
+                "de": "Geschäftsführer"
+            },
+            "description": {
+                "en": "Virtual Events & Web Development",
+                "de": "Virtual Events & Web development"
+            },
+            "url": "https://techillian.com",
+            "from": "2021-04-19",
+            "to": "now",
+            "category": "job",
+            "isHighlight": false
+        },
+        {
             "institution": "WEBneo GmbH",
             "title": {
                 "en": "Trainee in development",
                 "de": "Trainee in der Entwicklung"
             },
             "description": {
-                "en": "Web development",
+                "en": "Web Development",
                 "de": "Web development"
             },
             "url": "https://webneo.de",
