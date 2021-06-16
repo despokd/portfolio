@@ -37,6 +37,9 @@
 </Section>
 
 <style>
+  .portrait {
+    box-shadow: 8px 10px 0px 0px var(--cds-interactive-01);
+  }
   .slogan {
     margin-bottom: var(--cds-spacing-04);
   }

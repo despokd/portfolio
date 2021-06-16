@@ -37,6 +37,10 @@
     min-height: 1rem;
   }
 
+  .portrait {
+    box-shadow: none;
+  }
+
   .print-contact {
     display: flex;
   }
