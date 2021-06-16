@@ -37,6 +37,10 @@
 </Section>
 
 <style>
+  .portrait {
+    max-width: 128px;
+  }
+
   .slogan {
     margin-bottom: var(--cds-spacing-04);
   }
