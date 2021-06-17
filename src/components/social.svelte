@@ -4,6 +4,7 @@
   import LogoXing20 from "carbon-icons-svelte/lib/LogoXing20";
   import LogoLinkedin20 from "carbon-icons-svelte/lib/LogoLinkedIn20";
   import LogoGithub20 from "carbon-icons-svelte/lib/LogoGithub20";
+  import Fork20 from "carbon-icons-svelte/lib/Fork20";
 
   export let social = "custom";
   export let small = false;
@@ -19,8 +20,11 @@
     case "LinkedIn":
       icon = LogoLinkedin20;
       break;
-    case "Github":
+    case "GitHub":
       icon = LogoGithub20;
+      break;
+    case "GitLab":
+      icon = Fork20;
       break;
     default:
       icon = Link20;
