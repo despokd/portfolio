@@ -24,8 +24,12 @@
                 "url": "https://www.xing.com/profile/Kilian_Domaratius"
             },
             {
-                "name": "Github",
+                "name": "GitHub",
                 "url": "https://github.com/despokd"
+            },
+            {
+                "name": "GitLab",
+                "url": "https://gitlab.com/kdomaratius"
             },
             {
                 "name": "CodePen",
