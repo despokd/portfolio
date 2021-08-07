@@ -224,15 +224,21 @@
         },
         {
             "name": "Shopware 6",
-            "percent": 20,
+            "percent": 30,
             "url": "https://www.shopware.com/",
             "category": "cms"
         },
         {
             "name": "Twig",
-            "percent": 30,
+            "percent": 40,
             "url": "https://twig.symfony.com/",
             "category": "fe"
+        },
+        {
+            "name": "Git",
+            "percent": 40,
+            "url": "https://git-scm.com/",
+            "category": "dev"
         }
     ],
     "cvCategories": {
