@@ -1,6 +1,7 @@
 <script>
   import { Tile, Column } from "carbon-components-svelte";
   import { localString } from "../services/i18n";
+  import data from "../data.json";
   import dateFormat from "dateformat";
 
   export let employment;
@@ -18,7 +19,8 @@
   let dateTo = !isNaN(Date.parse(employment.to))
     ? new Date(employment.to)
     : employment.to;
-  let isActive = dateTo === "now" || dateTo === "" || dateTo >= new Date();
+  let isActive =
+    dateTo === 'now' || dateTo === "" || dateTo >= new Date();
   let isHightlight = isActive || employment.isHighlight;
 </script>
 
@@ -38,9 +40,9 @@
           -
           <span class:text-highlight={isActive}>
             {#if dateTo instanceof Date}
-              {dateFormat(dateTo, dateFormated)}
+              {dateTo >= new Date() ? data.now[$localString] : dateFormat(dateTo, dateFormated)}
             {:else}
-              {dateTo === "now" || dateTo == "" ? "Now" : dateTo}
+              { data.now[$localString] }
             {/if}
           </span>
         {/if}
