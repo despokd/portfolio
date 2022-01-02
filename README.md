@@ -85,10 +85,11 @@
   npm run build
   surge public my-project.surge.sh
   ```
+
 </details>
 
 ## ToDo
 
 - [ ] Add job requirements ( money, holidays, remote, flex time, full time, ...)
-- [ ] Translation for 'Now' (Current jobs)
+- [x] Translation for 'Now' (Current jobs)
 - [ ] Optimize print view (Firefox, multipages, landscape)

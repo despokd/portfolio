@@ -45,16 +45,19 @@
     display: "minimal-ui",
     icons: [
       {
-        src: "icon/android-chrome-192x192.png",
+        src: "/icon/android-chrome-192x192.png?v=2",
         sizes: "192x192",
         type: "image/png",
       },
       {
-        src: "icon/android-chrome-512x512.png",
+        src: "/icon/android-chrome-512x512.png?v=2",
         sizes: "512x512",
         type: "image/png",
       },
     ],
+    "theme_color": "#161616",
+    "background_color": "#161616",
+    "display": "standalone"
   };
   const stringManifest = JSON.stringify(dynamicManifest);
   const blob = new Blob([stringManifest], { type: "application/json" });
