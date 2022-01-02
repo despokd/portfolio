@@ -2,7 +2,7 @@
   import { Button } from "carbon-components-svelte";
   import Link20 from "carbon-icons-svelte/lib/Link20";
   import LogoXing20 from "carbon-icons-svelte/lib/LogoXing20";
-  import LogoLinkedin20 from "carbon-icons-svelte/lib/LogoLinkedIn20";
+  import LogoLinkedin20 from "carbon-icons-svelte/lib/LogoLinkedin20";
   import LogoGithub20 from "carbon-icons-svelte/lib/LogoGithub20";
   import Fork20 from "carbon-icons-svelte/lib/Fork20";
 
