@@ -43,7 +43,7 @@
       <Column sm={4} class="about">
         <h3>{$_("aboutMe.interests")}</h3>
       </Column>
-      {#each data.aboutMe.hobbys as hobby}
+      {#each data.aboutMe.hobbies as hobby}
         <Column sm={4} md={8} lg={8} class="about">
           <Tile>{hobby[$localString]}</Tile>
         </Column>
