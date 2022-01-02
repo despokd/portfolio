@@ -1,6 +1,7 @@
 {
     "app": {
-        "title": "Portfolio"
+        "title": "Portfolio",
+        "now": "Now"
     },
     "projects": {
         "title": "Projects",
@@ -26,7 +27,7 @@
     },
     "credits": {
         "customized_by": "Customized by",
-        "build_by": "Build_by"
+        "build_by": "Build by"
     },
     "aboutMe": {
         "title": "About me",

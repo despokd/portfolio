@@ -1,6 +1,7 @@
 {
   "app": {
-    "title": "Portfolio"
+    "title": "Portfolio",
+    "now": "Jetzt"
   },
   "projects": {
     "title": "Projekte",

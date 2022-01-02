@@ -1,9 +1,5 @@
 {
     "defaultLanguage": "de",
-    "now": {
-        "en": "Now",
-        "de": "Jetzt"
-    },
     "name": "Kilian Domaratius",
     "short_name": "KD",
     "slogan": "Web Developer.",
