@@ -1,8 +1,10 @@
 # [Portfolio site](https://kdomaratius.de)
+
 ![Preview portfolio](./.github/preview.jpg)
 [My personal example](https://kdomaratius.de)
 
 ## Features
+
 - One pager
 - Multilingual
 - [Carbon Design System](https://www.carbondesignsystem.com/)
@@ -11,11 +13,13 @@
 - Print optimized for CV
 
 ## Personalization
+
 1. Edit `data.json` in `/src` to your needs.
 2. Update `portrait.jpg`, `profile.jpg` and `social.jpg` to your picture in `/public/img/`
 3. Update icon files in `/public/icon/`
 
 ## Setup app
+
 <details>
   <summary>Click to expand</summary>
   
