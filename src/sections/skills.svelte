@@ -32,7 +32,6 @@
     let category = val.category ? val.category : "other";
     orderedByCategory[category].skills.push(val);
   });
-  console.log(orderedByCategory);
 </script>
 
 <Section id="skills" title={$_("skills.title")}>
