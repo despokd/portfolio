@@ -259,6 +259,22 @@
         {
             "institution": "WEBneo GmbH",
             "title": {
+                "en": "Junior developer",
+                "de": "Junior in der Entwicklung"
+            },
+            "description": {
+                "en": "Web Development",
+                "de": "Web development"
+            },
+            "url": "https://webneo.de",
+            "from": "2022-04-1",
+            "to": "now",
+            "category": "job",
+            "isHighlight": true
+        },
+        {
+            "institution": "WEBneo GmbH",
+            "title": {
                 "en": "Trainee in development",
                 "de": "Trainee in der Entwicklung"
             },
@@ -268,9 +284,9 @@
             },
             "url": "https://webneo.de",
             "from": "2021-05-24",
-            "to": "2022-05-23",
+            "to": "2022-03-31",
             "category": "job",
-            "isHighlight": true
+            "isHighlight": false
         },
         {
             "institution": "EventClass GmbH",
