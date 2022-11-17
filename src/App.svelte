@@ -1,4 +1,5 @@
 <script>
+  import "carbon-components-svelte/css/all.css";
   import data from "./data.json";
   import { setupI18n, isLocaleLoaded } from "./services/i18n";
   import { Loading } from "carbon-components-svelte";
