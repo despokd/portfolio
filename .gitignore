@@ -1,7 +1,10 @@
-.vscode/settings.json
-
-/node_modules/
-/public/build/
-
 .DS_Store
-public/build.zip
+node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

@@ -1,0 +1,17 @@
+{
+    "common": {
+        "title": "Kilian Domaratius",
+        "description": "Portfolio von Kilian Domaratius",
+        "repository": "Git Repository"
+    },
+    "pages": {
+        "home": {
+            "title": "Home",
+            "description": "Home"
+        },
+        "imprint": {
+            "title": "Impressum",
+            "description": "Impressum"
+        }
+    }
+}
