@@ -5,9 +5,11 @@ import { directus } from '$lib/api';
 export async function load() {
     let me = await directus.request(readItems('me'));
     let meTranslations = await directus.request(readItems('me_translations'));
+    let links = await directus.request(readItems('Links'));
 
     return {
         me,
-        meTranslations
+        meTranslations,
+        links
     }
 };
