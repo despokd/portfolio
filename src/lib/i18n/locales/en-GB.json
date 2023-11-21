@@ -7,11 +7,24 @@
     "pages": {
         "home": {
             "title": "Home",
-            "description": "Home"
+            "description": "Home",
+            "section": {
+                "about": "About",
+                "career": "Current Career"
+            }
         },
         "imprint": {
             "title": "Imprint",
             "description": "Imprint"
+        },
+        "cv": {
+            "title": "Carreer",
+            "description": "Career",
+            "experience": {
+                "job": "Work Experience",
+                "education": "Education",
+                "present": "Now"
+            }
         }
     }
 }

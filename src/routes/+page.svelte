@@ -1,7 +1,9 @@
 <script>
 	import { _ } from 'svelte-i18n';
 	import { getTranslation } from '$lib/directus';
-	import Socials from '$lib/components/socials.svelte';
+	import SectionHero from '$lib/components/section-hero.svelte';
+    import SectionCVPreview from '$lib/components/section-cv-preview.svelte';
+	import SectionDescription from '$lib/components/section-description.svelte';
 
 	export let data;
 </script>
@@ -11,82 +13,16 @@
 	<meta name="description" content={$_('common.description')} />
 </svelte:head>
 
-<section class="hero">
-	<div class="main">
-		<h1>{data.me.name}</h1>
-		<p>{getTranslation(data.meTranslations).slogan}.</p>
-	</div>
-	<div class="socials">
-		<Socials links={data.links} />
-	</div>
-	<picture>
-		<source srcset={data.me.image_portrait} media="(min-width: 600px)" />
-		<img src={data.me.image} alt={data.me.name} />
-	</picture>
-</section>
+<SectionHero me={data.me} links={data.links} />
+<div class="columns">
+    <SectionCVPreview experiences={data.experiences}/>
+	<SectionDescription description={getTranslation(data.me.translations).description} />
+</div>
 
 <style lang="scss">
-	.hero {
+	.columns {
 		display: grid;
-		grid-template-columns: 1fr 3fr;
-		column-gap: 5%;
-        row-gap: 10%;
-		margin-block: 5%;
-
-		.main {
-			grid-column: 2 / 3;
-			font-size: 1.5em;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			gap: 0.25em;
-
-			> * {
-				margin-top: 0;
-				margin-bottom: 0;
-				line-height: 2.5rem;
-			}
-		}
-
-		.socials {
-			grid-column: 1 / -1;
-			grid-row: 2;
-			margin-bottom: auto;
-		}
-
-		picture {
-			grid-column: 1 / 2;
-			grid-row: 1;
-
-			img {
-				width: 100%;
-				height: auto;
-				object-fit: contain;
-			}
-		}
-
-		@media (min-width: 600px) {
-			grid-template-columns: 2fr 1fr;
-
-			.main {
-				margin-top: auto;
-				grid-column: 1 / 2;
-				font-size: clamp(1.5em, 3vw, 5em);
-
-				> * {
-					line-height: initial;
-				}
-			}
-
-			.socials {
-				grid-column: 1 / 2;
-				grid-row: 2;
-			}
-
-			picture {
-				grid-column: 2 / 3;
-				grid-row: 1 / 3;
-			}
-		}
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-gap: 1rem;
 	}
 </style>
