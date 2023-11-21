@@ -40,5 +40,10 @@
             "title": "Snippets",
             "description": "Code Snippets"
         }
+    },
+    "snippets": {
+        "created": "Erstellt am: ",
+        "updated": "Aktualisiert am: ",
+        "tags": "Tags: "
     }
 }
