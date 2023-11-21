@@ -25,6 +25,10 @@
                 "education": "Ausbildung",
                 "present": "Aktuell"
             }
+        },
+        "projects": {
+            "title": "Projekte",
+            "description": "Beteiligungen auf Arbeit und private Projekte"
         }
     }
 }

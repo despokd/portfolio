@@ -25,6 +25,10 @@
                 "education": "Education",
                 "present": "Now"
             }
+        },
+        "projects": {
+            "title": "Projects",
+            "description": "Contributions at work and private projects"
         }
     }
 }

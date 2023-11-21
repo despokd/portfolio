@@ -4,6 +4,7 @@
 	import SectionHero from '$lib/components/section-hero.svelte';
     import SectionCVPreview from '$lib/components/section-cv-preview.svelte';
 	import SectionDescription from '$lib/components/section-description.svelte';
+	import SectionProjects from '$lib/components/section-projects.svelte';
 
 	export let data;
 </script>
@@ -18,6 +19,7 @@
     <SectionCVPreview experiences={data.experiences}/>
 	<SectionDescription description={getTranslation(data.me.translations).description} />
 </div>
+<SectionProjects projects={data.projects} />
 
 <style lang="scss">
 	.columns {

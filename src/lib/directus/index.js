@@ -9,8 +9,10 @@ import { defaultLocale } from '$lib/i18n';
  * @returns {any}
  */
 export function getTranslation(translations) {
+    if (!translations) return {};
+
     const languagesToCheck = [get(locale), defaultLocale];
     const translation = translations.find((translation) => languagesToCheck.includes(translation.languages_code));
 
-    return translation ?? translations[0];
+    return translation ?? translations[0] ?? {};
 }

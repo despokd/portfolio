@@ -14,9 +14,17 @@ export async function load() {
         }
     }));
 
+    let projects = await directus.request(readItems('project', {
+        fields: ['*', { translations: ['*'] }, { createdAt: ['*'] }],
+        filter: {
+            status: 'published'
+        }
+    }));
+
     return {
         me,
         links: await directus.request(readItems('Links')),
-        experiences
+        experiences,
+        projects
     }
 };
