@@ -39,6 +39,10 @@
         "snippets": {
             "title": "Snippets",
             "description": "Code Snippets"
+        },
+        "links": {
+            "title": "Links",
+            "description": "Recommended Links"
         }
     },
     "snippets": {
