@@ -1,6 +1,6 @@
 <script>
 	import { getTranslation } from '$lib/directus';
-import { _, getDateFormatter } from 'svelte-i18n';
+	import { _, getDateFormatter } from 'svelte-i18n';
 	import SvelteMarkdown from 'svelte-markdown';
 
 	export let data;
@@ -18,11 +18,15 @@ import { _, getDateFormatter } from 'svelte-i18n';
 	});
 </script>
 
+<svelte:head>
+	<title>{data.snippet.title} | {$_('common.title')}</title>
+</svelte:head>
+
 <h1>{data.snippet.title}</h1>
 <ul class="meta">
 	{#if data.snippet.date_created}
 		<li>
-            {$_('snippets.created')}
+			{$_('snippets.created')}
 			<time datetime={data.snippet.date_created}
 				>{formatDate(new Date(data.snippet.date_created))}</time
 			>
