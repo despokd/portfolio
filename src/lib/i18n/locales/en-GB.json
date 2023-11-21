@@ -10,7 +10,13 @@
             "description": "Home",
             "section": {
                 "about": "About",
-                "career": "Current Career"
+                "career": "Current Career",
+                "projects": {
+                    "all": "All Projects"
+                },
+                "snippets": {
+                    "all": "All Snippets"
+                }
             }
         },
         "imprint": {
@@ -29,6 +35,10 @@
         "projects": {
             "title": "Projects",
             "description": "Contributions at work and private projects"
+        },
+        "snippets": {
+            "title": "Snippets",
+            "description": "Code Snippets"
         }
     }
 }

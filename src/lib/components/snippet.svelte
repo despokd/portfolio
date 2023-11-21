@@ -6,7 +6,7 @@
 
 <article>
 	<a href={'/snippets/' + snippet.slug}>
-		<h3>{snippet.title}</h3>
+		<p><strong>{snippet.title}</strong></p>
 	</a>
 	<ul>
 		{#if snippet.date_created}
