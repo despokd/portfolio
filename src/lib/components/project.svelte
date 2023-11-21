@@ -10,8 +10,6 @@
 		.replace('http://', '')
 		.replace('www.', '')
 		.replace(/\/$/, '');
-
-    console.debug('project', project);
 </script>
 
 <article>
