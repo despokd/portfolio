@@ -2,9 +2,10 @@
 	import { _ } from 'svelte-i18n';
 	import { getTranslation } from '$lib/directus';
 	import SectionHero from '$lib/components/section-hero.svelte';
-    import SectionCVPreview from '$lib/components/section-cv-preview.svelte';
+	import SectionCVPreview from '$lib/components/section-cv-preview.svelte';
 	import SectionDescription from '$lib/components/section-description.svelte';
 	import SectionProjects from '$lib/components/section-projects.svelte';
+	import SectionSnippets from '$lib/components/section-snippets.svelte';
 
 	export let data;
 </script>
@@ -16,10 +17,11 @@
 
 <SectionHero me={data.me} links={data.links} />
 <div class="columns">
-    <SectionCVPreview experiences={data.experiences}/>
+	<SectionCVPreview experiences={data.experiences} />
 	<SectionDescription description={getTranslation(data.me.translations).description} />
 </div>
 <SectionProjects projects={data.projects} />
+<SectionSnippets snippets={data.snippets} />
 
 <style lang="scss">
 	.columns {

@@ -21,10 +21,19 @@ export async function load() {
         }
     }));
 
+    let snippets = await directus.request(readItems('post', {
+        fields: ['*', { translations: ['*'] }],
+        filter: {
+            status: 'published'
+        }
+    }));
+
+
     return {
         me,
         links: await directus.request(readItems('Links')),
         experiences,
-        projects
+        projects,
+        snippets
     }
 };
