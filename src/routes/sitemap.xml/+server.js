@@ -1,5 +1,5 @@
 import { readItems } from '@directus/sdk';
-import { directus } from '$lib/api';
+import { directus } from '$lib/directus/client';
 
 export async function GET(params) {
     let snippets = await directus.request(readItems('post', {
