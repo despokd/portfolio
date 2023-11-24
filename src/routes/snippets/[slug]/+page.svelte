@@ -2,8 +2,17 @@
 	import { getTranslation } from '$lib/directus';
 	import { _, getDateFormatter } from 'svelte-i18n';
 	import SvelteMarkdown from 'svelte-markdown';
+	import { onMount } from 'svelte';
+	import hljs from 'highlight.js';
+	import 'highlight.js/styles/vs.css';
 
 	export let data;
+
+	onMount(async () => {
+		document.querySelectorAll('pre code').forEach((block) => {
+			hljs.highlightBlock(block);
+		});
+	});
 
 	function formatDate(date) {
 		return new Date(date).toLocaleDateString(getDateFormatter().locale);
