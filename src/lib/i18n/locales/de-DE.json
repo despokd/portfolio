@@ -42,7 +42,8 @@
         },
         "links": {
             "title": "Links",
-            "description": "Empfehlenswerte Links"
+            "description": "Empfehlenswerte Links",
+            "showCollection": "Liste in neuen Tab öffnen"
         }
     },
     "snippets": {
