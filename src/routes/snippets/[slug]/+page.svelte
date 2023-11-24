@@ -4,13 +4,22 @@
 	import SvelteMarkdown from 'svelte-markdown';
 	import { onMount } from 'svelte';
 	import hljs from 'highlight.js';
-	import 'highlight.js/styles/vs.css';
+	import 'highlight.js/styles/an-old-hope.css';
 
 	export let data;
 
 	onMount(async () => {
+		// add syntax highlighting
 		document.querySelectorAll('pre code').forEach((block) => {
 			hljs.highlightBlock(block);
+		});
+
+		// handle external links
+		document.querySelectorAll('a').forEach((link) => {
+			if (link.hostname !== window.location.hostname) {
+				link.target = '_blank';
+				link.rel = 'noopener noreferrer';
+			}
 		});
 	});
 
