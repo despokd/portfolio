@@ -1,14 +1,12 @@
 <script>
 	import { _ } from 'svelte-i18n';
 	import SectionSnippets from '$lib/components/section-snippets.svelte';
+	import PageMeta from '$lib/components/page-meta.svelte';
 
 	export let data;
 </script>
 
-<svelte:head>
-	<title>{$_('pages.snippets.title')}</title>
-	<meta name="description" content={$_('pages.snippets.description')} />
-</svelte:head>
+<PageMeta title={$_('pages.snippets.title')} description={$_('pages.snippets.description')} />
 
 
 <h1>{$_('pages.snippets.title')}</h1>

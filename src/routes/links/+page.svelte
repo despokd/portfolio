@@ -1,5 +1,6 @@
 <script>
 	import { _ } from 'svelte-i18n';
+	import PageMeta from '$lib/components/page-meta.svelte';
 
 	const raindropUrl = 'https://raindrop.io/despokd/shared-39428323';
 	const raindropOptions = {
@@ -13,10 +14,7 @@
 		.join('&')}`;
 </script>
 
-<svelte:head>
-	<title>{$_('pages.links.title')}</title>
-	<meta name="description" content={$_('pages.links.description')} />
-</svelte:head>
+<PageMeta title={$_('pages.links.title')} description={$_('pages.links.description')} />
 
 <h1>{$_('pages.links.title')}</h1>
 <p>

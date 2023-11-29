@@ -5,6 +5,7 @@
 	import { onMount } from 'svelte';
 	import hljs from 'highlight.js';
 	import 'highlight.js/styles/an-old-hope.css';
+	import PageMeta from '$lib/components/page-meta.svelte';
 
 	export let data;
 
@@ -39,6 +40,8 @@
 <svelte:head>
 	<title>{data.snippet.title} | {$_('common.title')}</title>
 </svelte:head>
+
+<PageMeta title={data.snippet.title} description={data.snippet.description} />
 
 <h1>{data.snippet.title}</h1>
 <ul class="meta">

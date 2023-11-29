@@ -5,14 +5,12 @@
 	import SectionDescription from '$lib/components/section-description.svelte';
 	import SectionProjects from '$lib/components/section-projects.svelte';
 	import SectionSnippets from '$lib/components/section-snippets.svelte';
+	import PageMeta from '$lib/components/page-meta.svelte';
 
 	export let data;
 </script>
 
-<svelte:head>
-	<title>{$_('common.title')}</title>
-	<meta name="description" content={$_('common.description')} />
-</svelte:head>
+<PageMeta />
 
 <SectionHero me={data.me} links={data.links} />
 <div class="columns">

@@ -1,6 +1,7 @@
 <script>
 	import { _ } from 'svelte-i18n';
 	import Experience from '$lib/components/experience.svelte';
+	import PageMeta from '$lib/components/page-meta.svelte';
 
 	export let data;
 
@@ -24,10 +25,7 @@
 	});
 </script>
 
-<svelte:head>
-	<title>{$_('pages.cv.title')}</title>
-	<meta name="description" content={$_('pages.cv.description')} />
-</svelte:head>
+<PageMeta title={$_('pages.cv.title')} description={$_('pages.cv.description')} />
 
 <h1>{$_('pages.cv.title')}</h1>
 <p>{$_('pages.cv.description')}</p>
