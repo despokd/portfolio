@@ -2,7 +2,7 @@
 	import { _, getDateFormatter } from 'svelte-i18n';
 	import { getTranslation } from '$lib/directus';
 
-	export let experience, skills;
+	export let experience, skills, skills;
 
 	const dateFormat = {
 		month: 'short',
@@ -54,6 +54,21 @@
 	{/if}
 	<li>{start ?? ''}{end ? ` - ${end}` : ''}</li>
 </ul>
+{#if experience.skills}
+	<li>
+		<ul>
+			{#each tags as skill}
+				<li>
+					{#if skill.isHightlighted}
+						<i>{getTranslation(skill.translations).name}</i>
+					{:else}
+						{getTranslation(skill.translations).name}
+					{/if}
+				</li>
+			{/each}
+		</ul>
+	</li>
+{/if}
 {#if experience.skills}
 	<li>
 		<ul>
