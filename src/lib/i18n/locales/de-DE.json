@@ -10,7 +10,10 @@
             "description": "Home",
             "section": {
                 "about": "Über mich",
-                "career": "Karriere aktuell",
+                "cv": {
+                    "title": "Karriere",
+                    "all": "Zum Lebenslauf"
+                },
                 "projects": {
                     "all": "Alle Projekte"
                 },

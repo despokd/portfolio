@@ -23,7 +23,7 @@
 </script>
 
 <section>
-	<h2>{$_('pages.home.section.career')}</h2>
+	<h2>{$_('pages.home.section.cv.title')}</h2>
 	<ul>
 		{#if job}
 			<li>
@@ -36,6 +36,8 @@
 			</li>
 		{/if}
 	</ul>
+
+	<a href="/cv" class="button">{$_('pages.home.section.cv.all')}</a>
 </section>
 
 

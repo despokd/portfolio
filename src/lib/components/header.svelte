@@ -11,6 +11,7 @@
 				<li><a href="/snippets">{$_('pages.snippets.title')}</a></li>
 				<li><a href="/links">{$_('pages.links.title')}</a></li>
 				<li><a href="/projects">{$_('pages.projects.title')}</a></li>
+				<li><a href="/cv">{$_('pages.cv.title')}</a></li>
 			</ul>
 		</nav>
 	</header>
