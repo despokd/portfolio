@@ -26,6 +26,10 @@
             "title": "Impressum",
             "description": "Impressum"
         },
+        "privacy": {
+            "title": "Datenschutz",
+            "description": "Datenschutzerklärung"
+        },
         "cv": {
             "title": "Karriere",
             "description": "Karriere",

@@ -26,6 +26,10 @@
             "title": "Imprint",
             "description": "Imprint"
         },
+        "privacy": {
+            "title": "Privacy",
+            "description": "Privacy policy"
+        },
         "cv": {
             "title": "Carreer",
             "description": "Career",

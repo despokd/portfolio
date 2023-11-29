@@ -14,6 +14,7 @@
 	<nav>
 		<ul>
 			<li><a href="/imprint">{$_('pages.imprint.title')}</a></li>
+			<li><a href="/privacy">{$_('pages.privacy.title')}</a></li>
 			<li>
 				<a href="https://github.com/despokd/portfolio" target="_blank" rel="noopener noreferrer"
 					>{$_('common.repository')}</a
