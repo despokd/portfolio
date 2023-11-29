@@ -1,6 +1,5 @@
 <script>
 	import { _ } from 'svelte-i18n';
-	import { getTranslation } from '$lib/directus';
 	import SectionHero from '$lib/components/section-hero.svelte';
 	import SectionCVPreview from '$lib/components/section-cv-preview.svelte';
 	import SectionDescription from '$lib/components/section-description.svelte';
@@ -18,7 +17,7 @@
 <SectionHero me={data.me} links={data.links} />
 <div class="columns">
 	<SectionCVPreview experiences={data.experiences} />
-	<SectionDescription description={getTranslation(data.me.translations).description} />
+	<SectionDescription me={data.me}/>
 </div>
 <SectionProjects projects={data.projects} />
 <SectionSnippets snippets={data.snippets} />
