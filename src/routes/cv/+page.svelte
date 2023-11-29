@@ -2,6 +2,7 @@
 	import { _ } from 'svelte-i18n';
 	import Experience from '$lib/components/experience.svelte';
 	import PageMeta from '$lib/components/page-meta.svelte';
+	import { getTranslation } from '$lib/directus/index.js';
 
 	export let data;
 
@@ -23,6 +24,10 @@
 		if (!types[experience.type]) types[experience.type] = [];
 		types[experience.type].push(experience);
 	});
+
+	let interests = getTranslation(data.me.translations).interests ?? [];
+	let languages = getTranslation(data.me.translations).languages ?? [];
+	
 </script>
 
 <PageMeta title={$_('pages.cv.title')} description={$_('pages.cv.description')} />
@@ -46,6 +51,24 @@
 		</ul>
 	</section>
 {/each}
+
+<section>
+	<h2>{$_('pages.cv.interests')}</h2>
+	<ul>
+		{#each interests as interest}
+			<li>{interest.name}</li>
+		{/each}
+	</ul>
+</section>
+
+<section>
+	<h2>{$_('pages.cv.languages')}</h2>
+	<ul>
+		{#each languages as language}
+			<li>{language.name}{ language.level ? ` - ${language.level}` : ''}</li>
+		{/each}
+	</ul>
+</section>
 
 <style lang="scss">
 	ul {

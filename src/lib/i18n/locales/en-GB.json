@@ -39,7 +39,9 @@
                 "present": "Now",
                 "future": "Future",
                 "other": "Other"
-            }
+            },
+            "interests": "Interests",
+            "languages": "Languages"
         },
         "projects": {
             "title": "Projects",
