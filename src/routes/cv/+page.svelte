@@ -27,7 +27,7 @@
 
 	let interests = getTranslation(data.me.translations).interests ?? [];
 	let languages = getTranslation(data.me.translations).languages ?? [];
-	
+	let attributes = getTranslation(data.me.translations).attributes ?? [];
 </script>
 
 <PageMeta title={$_('pages.cv.title')} description={$_('pages.cv.description')} />
@@ -65,7 +65,16 @@
 	<h2>{$_('pages.cv.languages')}</h2>
 	<ul>
 		{#each languages as language}
-			<li>{language.name}{ language.level ? ` - ${language.level}` : ''}</li>
+			<li>{language.name}{language.level ? ` - ${language.level}` : ''}</li>
+		{/each}
+	</ul>
+</section>
+
+<section>
+	<h2>{$_('pages.cv.attributes')}</h2>
+	<ul>
+		{#each attributes as attribute}
+			<li>{attribute.name}</li>
 		{/each}
 	</ul>
 </section>

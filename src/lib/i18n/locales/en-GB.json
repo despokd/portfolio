@@ -41,7 +41,8 @@
                 "other": "Other"
             },
             "interests": "Interests",
-            "languages": "Languages"
+            "languages": "Languages",
+            "attributes": "Personal Attributes"
         },
         "projects": {
             "title": "Projects",

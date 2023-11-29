@@ -41,7 +41,8 @@
                 "other": "Weitere"
             },
             "interests": "Interessen",
-            "languages": "Sprachkenntnisse"
+            "languages": "Sprachkenntnisse",
+            "attributes": "Persönliche Eigenschaften"
         },
         "projects": {
             "title": "Projekte",
