@@ -32,7 +32,9 @@
             "experience": {
                 "job": "Berufserfahrung",
                 "education": "Ausbildung",
-                "present": "Aktuell"
+                "present": "Aktuell",
+                "future": "Zukunft",
+                "other": "Weitere"
             }
         },
         "projects": {

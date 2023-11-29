@@ -8,23 +8,12 @@ export async function load() {
     }));
 
     let experiences = await directus.request(readItems('experience', {
-        fields: ['*', { translations: ['*'] }],
-        filter: {
-            status: 'published'
-        }
-    }));
-
-    let projects = await directus.request(readItems('project', {
-        fields: ['*', { translations: ['*'] }, { createdAt: ['*'] }],
-        filter: {
-            status: 'published'
-        }
+        fields: ['*', { translations: ['*'] }]
     }));
 
 
     return {
         me,
-        experiences,
-        projects
+        experiences
     }
 };

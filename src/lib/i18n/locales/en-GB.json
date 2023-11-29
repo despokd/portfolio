@@ -32,7 +32,9 @@
             "experience": {
                 "job": "Work Experience",
                 "education": "Education",
-                "present": "Now"
+                "present": "Now",
+                "future": "Future",
+                "other": "Other"
             }
         },
         "projects": {
