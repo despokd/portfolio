@@ -2,7 +2,7 @@
 	import { _, getDateFormatter } from 'svelte-i18n';
 	import { getTranslation } from '$lib/directus';
 
-	export let experience, skills, skills;
+	export let experience, skills;
 
 	const dateFormat = {
 		month: 'short',
