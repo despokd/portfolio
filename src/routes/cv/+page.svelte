@@ -42,7 +42,7 @@
 		<ul>
 			{#each types[type] as experience}
 				<li>
-					<Experience {experience} />
+					<Experience {experience} skills={data.skills} />
 				</li>
 			{/each}
 		</ul>
