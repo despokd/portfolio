@@ -8,12 +8,17 @@ export async function load() {
     }));
 
     let experiences = await directus.request(readItems('experience', {
+        fields: ['*', { translations: ['*'] }, { skills: ['*'] }]
+    }));
+
+    let skills = await directus.request(readItems('skill', {
         fields: ['*', { translations: ['*'] }]
     }));
 
 
     return {
         me,
-        experiences
+        experiences,
+        skills
     }
 };
