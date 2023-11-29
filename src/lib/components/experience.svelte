@@ -69,21 +69,6 @@
 		</ul>
 	</li>
 {/if}
-{#if experience.skills}
-	<li>
-		<ul>
-			{#each tags as skill}
-				<li>
-					{#if skill.isHightlighted}
-						<i>{getTranslation(skill.translations).name}</i>
-					{:else}
-						{getTranslation(skill.translations).name}
-					{/if}
-				</li>
-			{/each}
-		</ul>
-	</li>
-{/if}
 
 <style lang="scss">
 	ul {
